@@ -9,6 +9,8 @@ router = APIRouter()
 
 @router.post("/ask", response_model=AskResponse)
 def ask(payload: AskRequest) -> AskResponse:
+    # HybridEngine sudah fallback ke mesin ekstraktif saat LLM gagal;
+    # penanganan ini hanya pengaman bila engine lain dipakai.
     try:
         response = answer_question(payload.question)
     except LLMError as error:

@@ -24,6 +24,8 @@ class Settings(BaseSettings):
     LLM_BASE_URL: str = "https://api.openai.com/v1"
     LLM_MODEL: str = "gpt-4o-mini"
     LLM_TIMEOUT_SECONDS: float = 12.0
+    LLM_CONNECT_TIMEOUT_SECONDS: float = 3.0
+    LLM_TOTAL_BUDGET_SECONDS: float = 25.0
     LLM_JSON_MODE: bool = True
     LLM_MAX_CONTEXT_PROVISIONS: int = 12
 

@@ -1,5 +1,9 @@
 import json
 import re
+import time
+from collections.abc import Iterator
+from contextlib import contextmanager
+from contextvars import ContextVar
 from typing import Any
 
 import httpx
@@ -14,6 +18,21 @@ class LLMError(Exception):
         self.message = message
 
 
+MIN_CALL_SECONDS = 1.0
+
+_deadline: ContextVar[float | None] = ContextVar("llm_deadline", default=None)
+
+
+@contextmanager
+def llm_deadline(seconds: float) -> Iterator[None]:
+    """Batasi total waktu semua panggilan LLM di dalam blok ini."""
+    token = _deadline.set(time.monotonic() + seconds)
+    try:
+        yield
+    finally:
+        _deadline.reset(token)
+
+
 class LLMClient:
     def __init__(self, settings: Settings, transport: httpx.BaseTransport | None = None) -> None:
         key = settings.LLM_API_KEY
@@ -21,10 +40,19 @@ class LLMClient:
         self.base_url = settings.LLM_BASE_URL.rstrip("/")
         self.model = settings.LLM_MODEL
         self.json_mode = settings.LLM_JSON_MODE
-        self.client = httpx.Client(
-            timeout=httpx.Timeout(settings.LLM_TIMEOUT_SECONDS),
-            transport=transport,
-        )
+        self.timeout = settings.LLM_TIMEOUT_SECONDS
+        self.connect_timeout = settings.LLM_CONNECT_TIMEOUT_SECONDS
+        self.client = httpx.Client(transport=transport)
+
+    def _timeout(self) -> httpx.Timeout:
+        limit = self.timeout
+        deadline = _deadline.get()
+        if deadline is not None:
+            remaining = deadline - time.monotonic()
+            if remaining < MIN_CALL_SECONDS:
+                raise LLMError("timeout", "Batas waktu total layanan LLM habis.")
+            limit = min(limit, remaining)
+        return httpx.Timeout(limit, connect=min(self.connect_timeout, limit))
 
     def complete_json(self, system: str, user: str, max_tokens: int = 900) -> dict[str, Any]:
         payload: dict[str, Any] = {
@@ -43,6 +71,7 @@ class LLMClient:
                 f"{self.base_url}/chat/completions",
                 headers={"Authorization": f"Bearer {self.api_key}"},
                 json=payload,
+                timeout=self._timeout(),
             )
         except httpx.TimeoutException as error:
             raise LLMError("timeout", "Layanan LLM tidak merespons tepat waktu.") from error

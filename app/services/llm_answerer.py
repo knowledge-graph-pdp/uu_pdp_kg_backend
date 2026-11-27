@@ -21,6 +21,33 @@ Balas hanya JSON dengan bentuk:
 Jika status "refused", isi field lain dengan string kosong atau list kosong."""
 
 PASAL_REF = re.compile(r"[Pp]asal\s+(\d+)")
+STATUSES = {"answered", "refused"}
+
+
+def _strings(value: Any) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [item for item in value if isinstance(item, str) and item]
+
+
+def _string(value: Any) -> str:
+    return value.strip() if isinstance(value, str) else ""
+
+
+def normalize(data: dict[str, Any]) -> dict[str, Any]:
+    """Paksa output LLM ke tipe yang diharapkan; status tak dikenal dianggap balasan rusak."""
+    status = _string(data.get("status")).lower()
+    if status not in STATUSES:
+        raise LLMError("parse", "Status jawaban LLM tidak dikenali.")
+    primary = _string(data.get("primary_id"))
+    return {
+        "status": status,
+        "primary_id": primary or None,
+        "cited_ids": _strings(data.get("cited_ids")),
+        "lead": _string(data.get("lead")),
+        "highlights": _strings(data.get("highlights")),
+        "detail": _string(data.get("detail")),
+    }
 
 
 class LLMAnswerer:
@@ -30,7 +57,7 @@ class LLMAnswerer:
 
     def ask(self, question: str, context: str) -> dict[str, Any]:
         user = f"KONTEKS:\n{context}\n\nPERTANYAAN:\n<<<\n{question}\n>>>"
-        return self.client.complete_json(ANSWER_PROMPT, user)
+        return normalize(self.client.complete_json(ANSWER_PROMPT, user))
 
     def compose(
         self,
@@ -38,32 +65,29 @@ class LLMAnswerer:
         data: dict[str, Any],
         allowed: list[str],
     ) -> AskResponse | None:
-        if str(data.get("status", "")).lower() != "answered":
+        if data["status"] != "answered":
             return None
-        lead = data.get("lead")
-        detail = data.get("detail")
-        if not isinstance(lead, str) or not lead.strip():
+        lead = data["lead"]
+        detail = data["detail"]
+        if not lead:
             raise LLMError("parse", "Jawaban LLM tidak memuat teks.")
-        cited = [
-            i
-            for i in (data.get("cited_ids") or [])
-            if isinstance(i, str) and i in allowed and self.store.provisions[i].kind != "huruf"
-        ][:4]
+        cited = list(
+            dict.fromkeys(
+                i for i in data["cited_ids"] if i in allowed and self.store.provisions[i].kind != "huruf"
+            )
+        )[:4]
         numbers = {str(self.store.provisions[i].number) for i in allowed}
-        text = f"{lead} {detail if isinstance(detail, str) else ''}"
-        if any(n not in numbers for n in PASAL_REF.findall(text)):
+        if any(n not in numbers for n in PASAL_REF.findall(f"{lead} {detail}")):
             return base
-        highlights = [
-            h for h in (data.get("highlights") or []) if isinstance(h, str) and h and h in lead
-        ][:3]
+        highlights = [h for h in data["highlights"] if h in lead][:3]
         legal_basis = [LegalBasis(label=self.store.provisions[i].label, kind="pasal") for i in cited]
         sanction = [b for b in base.legal_basis if b.kind == "sanksi"]
         return base.model_copy(
             update={
                 "answer": AnswerText(
-                    lead=lead.strip(),
+                    lead=lead,
                     highlights=highlights,
-                    detail=detail.strip() if isinstance(detail, str) and detail.strip() else base.answer.detail,
+                    detail=detail or base.answer.detail,
                 ),
                 "legal_basis": (legal_basis or [b for b in base.legal_basis if b.kind == "pasal"]) + sanction,
             }

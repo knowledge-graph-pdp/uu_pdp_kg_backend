@@ -1,4 +1,5 @@
 import json
+import logging
 
 import httpx
 import pytest
@@ -22,12 +23,17 @@ SPARQL = (
 )
 
 
-def make_engine(handler):
-    settings = Settings(LLM_API_KEY="test-key")
+def make_engine(handler, **overrides):
+    settings = Settings(_env_file=None, LLM_API_KEY="test-key", **overrides)
     client = LLMClient(settings, transport=httpx.MockTransport(handler))
     store = GraphStore(settings.GRAPH_PATH)
     extractive = AskEngine(store, Retriever(store))
-    return HybridEngine(extractive, SparqlPlanner(store, client), LLMAnswerer(store, client))
+    return HybridEngine(
+        extractive,
+        SparqlPlanner(store, client),
+        LLMAnswerer(store, client),
+        settings.LLM_TOTAL_BUDGET_SECONDS,
+    )
 
 
 def reply(payload):
@@ -119,7 +125,83 @@ def test_llm_timeout_falls_back_to_extractive(monkeypatch):
     with TestClient(app) as client:
         response = client.post("/api/v1/ask", json={"question": QUESTION})
     assert response.status_code == 200
-    assert response.json()["status"] == "answered"
+    body = response.json()
+    assert body["status"] == "answered"
+    assert "3x24 jam" in body["answer"]["lead"]
+
+
+def test_network_error_falls_back_and_logs(caplog):
+    def handler(request: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError("refused")
+
+    engine = make_engine(handler)
+    with caplog.at_level(logging.WARNING, logger="app.services.ask_service"):
+        response = engine.answer(QUESTION)
+    assert response.status == "answered"
+    assert "3x24 jam" in response.answer.lead
+    assert any("network" in record.getMessage() for record in caplog.records)
+
+
+def test_planner_timeout_falls_back():
+    def handler(request: httpx.Request) -> httpx.Response:
+        if "SPARQL" in json.loads(request.content)["messages"][0]["content"]:
+            raise httpx.ReadTimeout("slow")
+        return reply(GOOD)
+
+    response = make_engine(handler).answer(QUESTION)
+    assert response.status == "answered"
+    assert "3x24 jam" in response.answer.lead
+
+
+@pytest.mark.parametrize(
+    "field, value",
+    [("cited_ids", 5), ("highlights", 5), ("primary_id", ["x"]), ("lead", 7), ("detail", {"a": 1})],
+)
+def test_wrong_typed_llm_fields_do_not_crash(field, value):
+    response = make_engine(scripted({**GOOD, field: value})).answer(QUESTION)
+    assert response.status == "answered"
+    assert response.answer.lead
+
+
+@pytest.mark.parametrize("payload", [{}, {"status": None}, {"status": "maybe"}])
+def test_malformed_status_falls_back_instead_of_refusing(payload):
+    response = make_engine(scripted(payload)).answer(QUESTION)
+    assert response.status == "answered"
+    assert "3x24 jam" in response.answer.lead
+
+
+def test_duplicate_cited_ids_are_deduplicated():
+    data = {**GOOD, "cited_ids": ["Pasal_46_ayat_1", "Pasal_46_ayat_1", "Pasal_46_ayat_2"]}
+    response = make_engine(scripted(data)).answer(QUESTION)
+    labels = [b.label for b in response.legal_basis]
+    assert len(labels) == len(set(labels))
+
+
+def test_total_budget_exhausted_skips_llm():
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        return reply(GOOD)
+
+    response = make_engine(handler, LLM_TOTAL_BUDGET_SECONDS=0.5).answer(QUESTION)
+    assert calls == []
+    assert response.status == "answered"
+    assert "3x24 jam" in response.answer.lead
+
+
+def test_per_call_timeout_is_capped_by_remaining_budget():
+    seen = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen.append(request.extensions["timeout"])
+        if "SPARQL" in json.loads(request.content)["messages"][0]["content"]:
+            return reply({"sparql": SPARQL})
+        return reply(GOOD)
+
+    make_engine(handler, LLM_TIMEOUT_SECONDS=12, LLM_TOTAL_BUDGET_SECONDS=5).answer(QUESTION)
+    assert seen
+    assert all(t["read"] <= 5 and t["connect"] <= 3 for t in seen)
 
 
 def test_empty_llm_lead_falls_back_to_extractive():
