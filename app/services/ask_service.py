@@ -1,3 +1,4 @@
+import logging
 from functools import lru_cache
 from typing import Protocol
 
@@ -7,9 +8,11 @@ from app.services.answer_builder import build_answer
 from app.services.context import build_context
 from app.services.graph_store import GraphStore
 from app.services.llm_answerer import LLMAnswerer
-from app.services.llm_client import LLMClient
+from app.services.llm_client import LLMClient, LLMError
 from app.services.retriever import Retriever
 from app.services.sparql_planner import SparqlPlanner
+
+logger = logging.getLogger(__name__)
 
 REFUSAL_MESSAGE = (
     "Pertanyaan ini tidak terhubung ke pasal mana pun di UU PDP, "
@@ -63,6 +66,13 @@ class HybridEngine:
         self.answerer = answerer
 
     def answer(self, question: str) -> AskResponse:
+        try:
+            return self._answer_with_llm(question)
+        except LLMError as error:
+            logger.warning("LLM gagal (%s): %s; memakai mesin ekstraktif", error.kind, error.message)
+            return self.extractive.answer(question)
+
+    def _answer_with_llm(self, question: str) -> AskResponse:
         base = self.extractive
         store = base.store
         if base.retriever.is_out_of_scope(question):

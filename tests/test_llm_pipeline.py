@@ -93,29 +93,47 @@ def test_unsafe_sparql_is_ignored():
     assert response.status == "answered"
 
 
-def test_endpoint_maps_llm_errors(monkeypatch):
+QUESTION = "Berapa lama batas waktu pemberitahuan kebocoran data pribadi?"
+
+
+def test_llm_http_error_falls_back_to_extractive(monkeypatch):
     def handler(request: httpx.Request) -> httpx.Response:
         return httpx.Response(500, json={})
 
     engine = make_engine(handler)
     monkeypatch.setattr(ask_service, "get_engine", lambda: engine)
     with TestClient(app) as client:
-        response = client.post("/api/v1/ask", json={"question": "Berapa lama batas waktu pemberitahuan kebocoran data pribadi?"})
-    assert response.status_code == 502
+        response = client.post("/api/v1/ask", json={"question": QUESTION})
+    assert response.status_code == 200
+    body = response.json()
+    assert body["status"] == "answered"
+    assert "3x24 jam" in body["answer"]["lead"]
 
 
-def test_timeout_maps_to_504(monkeypatch):
+def test_llm_timeout_falls_back_to_extractive(monkeypatch):
     def handler(request: httpx.Request) -> httpx.Response:
         raise httpx.ReadTimeout("slow")
 
     engine = make_engine(handler)
     monkeypatch.setattr(ask_service, "get_engine", lambda: engine)
     with TestClient(app) as client:
-        response = client.post("/api/v1/ask", json={"question": "Berapa lama batas waktu pemberitahuan kebocoran data pribadi?"})
-    assert response.status_code == 504
+        response = client.post("/api/v1/ask", json={"question": QUESTION})
+    assert response.status_code == 200
+    assert response.json()["status"] == "answered"
 
 
-def test_without_key_uses_extractive_engine():
+def test_empty_llm_lead_falls_back_to_extractive():
+    engine = make_engine(scripted({**GOOD, "lead": ""}))
+    response = engine.answer(QUESTION)
+    assert response.status == "answered"
+    assert "3x24 jam" in response.answer.lead
+
+
+def test_without_key_uses_extractive_engine(monkeypatch):
+    monkeypatch.setattr(ask_service, "settings", Settings(_env_file=None, LLM_API_KEY=None))
     ask_service.get_engine.cache_clear()
-    engine = ask_service.get_engine()
+    try:
+        engine = ask_service.get_engine()
+    finally:
+        ask_service.get_engine.cache_clear()
     assert isinstance(engine, AskEngine)
