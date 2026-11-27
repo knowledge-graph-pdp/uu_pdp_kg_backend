@@ -1,0 +1,2663 @@
+@prefix d: <https://pdp-graph.example.org/data/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pdp: <https://pdp-graph.example.org/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:Mention_1 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_10 a pdp:Mention ;
+    pdp:inProvision d:Pasal_2 ;
+    pdp:mentionsConcept d:Concept_KerjaSamaInternasional ;
+    pdp:occurrences 1 .
+
+d:Mention_100 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_101 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_102 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_103 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Retensi ;
+    pdp:occurrences 1 .
+
+d:Mention_104 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_105 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_106 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_107 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_108 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_109 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_11 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Asas ;
+    pdp:occurrences 1 .
+
+d:Mention_110 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_111 a pdp:Mention ;
+    pdp:inProvision d:Pasal_22_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_112 a pdp:Mention ;
+    pdp:inProvision d:Pasal_22_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 2 .
+
+d:Mention_113 a pdp:Mention ;
+    pdp:inProvision d:Pasal_22_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_114 a pdp:Mention ;
+    pdp:inProvision d:Pasal_22_ayat_5 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_115 a pdp:Mention ;
+    pdp:inProvision d:Pasal_23 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_116 a pdp:Mention ;
+    pdp:inProvision d:Pasal_23 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_117 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_118 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_119 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_12 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_120 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_121 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_122 a pdp:Mention ;
+    pdp:inProvision d:Pasal_24 ;
+    pdp:mentionsConcept d:Concept_Pembuktian ;
+    pdp:occurrences 1 .
+
+d:Mention_123 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_124 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataAnak ;
+    pdp:occurrences 1 .
+
+d:Mention_125 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_126 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_127 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataAnak ;
+    pdp:occurrences 2 .
+
+d:Mention_128 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_129 a pdp:Mention ;
+    pdp:inProvision d:Pasal_25_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_13 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_KepastianHukum ;
+    pdp:occurrences 1 .
+
+d:Mention_130 a pdp:Mention ;
+    pdp:inProvision d:Pasal_26_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_131 a pdp:Mention ;
+    pdp:inProvision d:Pasal_26_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_132 a pdp:Mention ;
+    pdp:inProvision d:Pasal_27 ;
+    pdp:mentionsConcept d:Concept_DataSpesifik ;
+    pdp:occurrences 1 .
+
+d:Mention_133 a pdp:Mention ;
+    pdp:inProvision d:Pasal_27 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_134 a pdp:Mention ;
+    pdp:inProvision d:Pasal_27 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_135 a pdp:Mention ;
+    pdp:inProvision d:Pasal_27 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_136 a pdp:Mention ;
+    pdp:inProvision d:Pasal_28 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_137 a pdp:Mention ;
+    pdp:inProvision d:Pasal_28 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 2 .
+
+d:Mention_138 a pdp:Mention ;
+    pdp:inProvision d:Pasal_28 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_139 a pdp:Mention ;
+    pdp:inProvision d:Pasal_29 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_14 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_KepentinganUmum ;
+    pdp:occurrences 1 .
+
+d:Mention_140 a pdp:Mention ;
+    pdp:inProvision d:Pasal_29 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_141 a pdp:Mention ;
+    pdp:inProvision d:Pasal_29 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_142 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_143 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_144 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Perbaikan ;
+    pdp:occurrences 2 .
+
+d:Mention_145 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_146 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_147 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat3x24 ;
+    pdp:occurrences 1 .
+
+d:Mention_148 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_149 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_15 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Kemanfaatan ;
+    pdp:occurrences 1 .
+
+d:Mention_150 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_151 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Perbaikan ;
+    pdp:occurrences 1 .
+
+d:Mention_152 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_153 a pdp:Mention ;
+    pdp:inProvision d:Pasal_30_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_154 a pdp:Mention ;
+    pdp:inProvision d:Pasal_31 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_155 a pdp:Mention ;
+    pdp:inProvision d:Pasal_31 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_156 a pdp:Mention ;
+    pdp:inProvision d:Pasal_31 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_157 a pdp:Mention ;
+    pdp:inProvision d:Pasal_31 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_158 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_159 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_16 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_KehatiHatian ;
+    pdp:occurrences 1 .
+
+d:Mention_160 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_161 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Akses ;
+    pdp:occurrences 1 .
+
+d:Mention_162 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_163 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Akses ;
+    pdp:occurrences 1 .
+
+d:Mention_164 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_165 a pdp:Mention ;
+    pdp:inProvision d:Pasal_32_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Tenggat3x24 ;
+    pdp:occurrences 1 .
+
+d:Mention_166 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_167 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_DataKesehatan ;
+    pdp:occurrences 1 .
+
+d:Mention_168 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_169 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_Akses ;
+    pdp:occurrences 1 .
+
+d:Mention_17 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Keseimbangan ;
+    pdp:occurrences 1 .
+
+d:Mention_170 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_171 a pdp:Mention ;
+    pdp:inProvision d:Pasal_33 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 2 .
+
+d:Mention_172 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_173 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_174 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_175 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_176 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_PenilaianDampak ;
+    pdp:occurrences 1 .
+
+d:Mention_177 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_178 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_179 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataSpesifik ;
+    pdp:occurrences 1 .
+
+d:Mention_18 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Pertanggungjawaban ;
+    pdp:occurrences 1 .
+
+d:Mention_180 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 2 .
+
+d:Mention_181 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Profiling ;
+    pdp:occurrences 1 .
+
+d:Mention_182 a pdp:Mention ;
+    pdp:inProvision d:Pasal_34_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_183 a pdp:Mention ;
+    pdp:inProvision d:Pasal_35 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_184 a pdp:Mention ;
+    pdp:inProvision d:Pasal_35 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_185 a pdp:Mention ;
+    pdp:inProvision d:Pasal_35 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_186 a pdp:Mention ;
+    pdp:inProvision d:Pasal_35 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 3 .
+
+d:Mention_187 a pdp:Mention ;
+    pdp:inProvision d:Pasal_36 ;
+    pdp:mentionsConcept d:Concept_Kerahasiaan ;
+    pdp:occurrences 1 .
+
+d:Mention_188 a pdp:Mention ;
+    pdp:inProvision d:Pasal_36 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_189 a pdp:Mention ;
+    pdp:inProvision d:Pasal_36 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_19 a pdp:Mention ;
+    pdp:inProvision d:Pasal_3 ;
+    pdp:mentionsConcept d:Concept_Kerahasiaan ;
+    pdp:occurrences 1 .
+
+d:Mention_190 a pdp:Mention ;
+    pdp:inProvision d:Pasal_36 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_191 a pdp:Mention ;
+    pdp:inProvision d:Pasal_37 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_192 a pdp:Mention ;
+    pdp:inProvision d:Pasal_37 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_193 a pdp:Mention ;
+    pdp:inProvision d:Pasal_37 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_194 a pdp:Mention ;
+    pdp:inProvision d:Pasal_38 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_195 a pdp:Mention ;
+    pdp:inProvision d:Pasal_38 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_196 a pdp:Mention ;
+    pdp:inProvision d:Pasal_38 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_197 a pdp:Mention ;
+    pdp:inProvision d:Pasal_38 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_198 a pdp:Mention ;
+    pdp:inProvision d:Pasal_38 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 1 .
+
+d:Mention_199 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_2 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 5 .
+
+d:Mention_20 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 4 .
+
+d:Mention_200 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_201 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_202 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pertanggungjawaban ;
+    pdp:occurrences 1 .
+
+d:Mention_203 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_204 a pdp:Mention ;
+    pdp:inProvision d:Pasal_39_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 1 .
+
+d:Mention_205 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_206 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_207 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_208 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_209 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_21 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataUmum ;
+    pdp:occurrences 1 .
+
+d:Mention_210 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_PenarikanPersetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_211 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_212 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_213 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_2 ;
+    pdp:mentionsConcept d:Concept_PenarikanPersetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_214 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_215 a pdp:Mention ;
+    pdp:inProvision d:Pasal_40_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Tenggat3x24 ;
+    pdp:occurrences 1 .
+
+d:Mention_216 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_217 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_218 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_219 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_22 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataSpesifik ;
+    pdp:occurrences 1 .
+
+d:Mention_220 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat3x24 ;
+    pdp:occurrences 1 .
+
+d:Mention_221 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_222 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_223 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pengecualian ;
+    pdp:occurrences 1 .
+
+d:Mention_224 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_3 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_225 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_3 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_226 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_227 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_228 a pdp:Mention ;
+    pdp:inProvision d:Pasal_41_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_229 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_23 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 6 .
+
+d:Mention_230 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_231 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_232 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_233 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Retensi ;
+    pdp:occurrences 1 .
+
+d:Mention_234 a pdp:Mention ;
+    pdp:inProvision d:Pasal_42_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_235 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 3 .
+
+d:Mention_236 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_237 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_238 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_239 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 1 .
+
+d:Mention_24 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataSpesifik ;
+    pdp:occurrences 1 .
+
+d:Mention_240 a pdp:Mention ;
+    pdp:inProvision d:Pasal_43_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_241 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_242 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_243 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_244 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Retensi ;
+    pdp:occurrences 2 .
+
+d:Mention_245 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 1 .
+
+d:Mention_246 a pdp:Mention ;
+    pdp:inProvision d:Pasal_44_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_247 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_248 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_249 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_25 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataKesehatan ;
+    pdp:occurrences 1 .
+
+d:Mention_250 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 2 .
+
+d:Mention_251 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_252 a pdp:Mention ;
+    pdp:inProvision d:Pasal_45 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_253 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_254 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 3 .
+
+d:Mention_255 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_256 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_257 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_258 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_KegagalanPDP ;
+    pdp:occurrences 1 .
+
+d:Mention_259 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_26 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataBiometrik ;
+    pdp:occurrences 1 .
+
+d:Mention_260 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_261 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat3x24 ;
+    pdp:occurrences 1 .
+
+d:Mention_262 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_263 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_264 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_265 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_266 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_267 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_268 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_KegagalanPDP ;
+    pdp:occurrences 1 .
+
+d:Mention_269 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_27 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataGenetika ;
+    pdp:occurrences 1 .
+
+d:Mention_270 a pdp:Mention ;
+    pdp:inProvision d:Pasal_46_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_271 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_272 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_Pertanggungjawaban ;
+    pdp:occurrences 1 .
+
+d:Mention_273 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_274 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_275 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_276 a pdp:Mention ;
+    pdp:inProvision d:Pasal_47 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_277 a pdp:Mention ;
+    pdp:inProvision d:Pasal_48_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_278 a pdp:Mention ;
+    pdp:inProvision d:Pasal_48_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_279 a pdp:Mention ;
+    pdp:inProvision d:Pasal_48_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_28 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_CatatanKejahatan ;
+    pdp:occurrences 1 .
+
+d:Mention_280 a pdp:Mention ;
+    pdp:inProvision d:Pasal_48_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_281 a pdp:Mention ;
+    pdp:inProvision d:Pasal_48_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_282 a pdp:Mention ;
+    pdp:inProvision d:Pasal_49 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_283 a pdp:Mention ;
+    pdp:inProvision d:Pasal_49 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_284 a pdp:Mention ;
+    pdp:inProvision d:Pasal_49 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_285 a pdp:Mention ;
+    pdp:inProvision d:Pasal_49 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_286 a pdp:Mention ;
+    pdp:inProvision d:Pasal_50_ayat_1 ;
+    pdp:mentionsConcept d:Concept_KepentinganUmum ;
+    pdp:occurrences 1 .
+
+d:Mention_287 a pdp:Mention ;
+    pdp:inProvision d:Pasal_50_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataKeuangan ;
+    pdp:occurrences 1 .
+
+d:Mention_288 a pdp:Mention ;
+    pdp:inProvision d:Pasal_50_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengecualian ;
+    pdp:occurrences 1 .
+
+d:Mention_289 a pdp:Mention ;
+    pdp:inProvision d:Pasal_50_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 1 .
+
+d:Mention_29 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataAnak ;
+    pdp:occurrences 1 .
+
+d:Mention_290 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_291 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_292 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_293 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_294 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_5 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_295 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_5 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 2 .
+
+d:Mention_296 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_5 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_297 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_5 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_298 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_6 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_299 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_6 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 2 .
+
+d:Mention_3 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_30 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataKeuangan ;
+    pdp:occurrences 1 .
+
+d:Mention_300 a pdp:Mention ;
+    pdp:inProvision d:Pasal_51_ayat_6 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 2 .
+
+d:Mention_301 a pdp:Mention ;
+    pdp:inProvision d:Pasal_52 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_302 a pdp:Mention ;
+    pdp:inProvision d:Pasal_52 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_303 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_304 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 3 .
+
+d:Mention_305 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataSpesifik ;
+    pdp:occurrences 1 .
+
+d:Mention_306 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_CatatanKejahatan ;
+    pdp:occurrences 1 .
+
+d:Mention_307 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_308 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_309 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_PejabatPDP ;
+    pdp:occurrences 1 .
+
+d:Mention_31 a pdp:Mention ;
+    pdp:inProvision d:Pasal_4_ayat_3 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 3 .
+
+d:Mention_310 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_311 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_312 a pdp:Mention ;
+    pdp:inProvision d:Pasal_53_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_313 a pdp:Mention ;
+    pdp:inProvision d:Pasal_54_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_314 a pdp:Mention ;
+    pdp:inProvision d:Pasal_54_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_315 a pdp:Mention ;
+    pdp:inProvision d:Pasal_54_ayat_1 ;
+    pdp:mentionsConcept d:Concept_PejabatPDP ;
+    pdp:occurrences 1 .
+
+d:Mention_316 a pdp:Mention ;
+    pdp:inProvision d:Pasal_54_ayat_1 ;
+    pdp:mentionsConcept d:Concept_PenilaianDampak ;
+    pdp:occurrences 1 .
+
+d:Mention_317 a pdp:Mention ;
+    pdp:inProvision d:Pasal_55_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_318 a pdp:Mention ;
+    pdp:inProvision d:Pasal_55_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_319 a pdp:Mention ;
+    pdp:inProvision d:Pasal_55_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_32 a pdp:Mention ;
+    pdp:inProvision d:Pasal_5 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_320 a pdp:Mention ;
+    pdp:inProvision d:Pasal_55_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_321 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_322 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_323 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_2 ;
+    pdp:mentionsConcept d:Concept_TransferData ;
+    pdp:occurrences 2 .
+
+d:Mention_324 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_325 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_326 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_327 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_328 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_4 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_329 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_4 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_33 a pdp:Mention ;
+    pdp:inProvision d:Pasal_5 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_330 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_331 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_332 a pdp:Mention ;
+    pdp:inProvision d:Pasal_56_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_333 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_334 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SanksiAdministratif ;
+    pdp:occurrences 1 .
+
+d:Mention_335 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_336 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_337 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 2 .
+
+d:Mention_338 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_339 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SanksiAdministratif ;
+    pdp:occurrences 3 .
+
+d:Mention_34 a pdp:Mention ;
+    pdp:inProvision d:Pasal_6 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_340 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_3 ;
+    pdp:mentionsConcept d:Concept_SanksiAdministratif ;
+    pdp:occurrences 1 .
+
+d:Mention_341 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_342 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_343 a pdp:Mention ;
+    pdp:inProvision d:Pasal_57_ayat_4 ;
+    pdp:mentionsConcept d:Concept_SanksiAdministratif ;
+    pdp:occurrences 1 .
+
+d:Mention_344 a pdp:Mention ;
+    pdp:inProvision d:Pasal_58 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_345 a pdp:Mention ;
+    pdp:inProvision d:Pasal_58 ;
+    pdp:mentionsConcept d:Concept_Pertanggungjawaban ;
+    pdp:occurrences 1 .
+
+d:Mention_346 a pdp:Mention ;
+    pdp:inProvision d:Pasal_58 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_347 a pdp:Mention ;
+    pdp:inProvision d:Pasal_58 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_348 a pdp:Mention ;
+    pdp:inProvision d:Pasal_59 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_349 a pdp:Mention ;
+    pdp:inProvision d:Pasal_59 ;
+    pdp:mentionsConcept d:Concept_Sengketa ;
+    pdp:occurrences 1 .
+
+d:Mention_35 a pdp:Mention ;
+    pdp:inProvision d:Pasal_6 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_350 a pdp:Mention ;
+    pdp:inProvision d:Pasal_60 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_351 a pdp:Mention ;
+    pdp:inProvision d:Pasal_60 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_352 a pdp:Mention ;
+    pdp:inProvision d:Pasal_60 ;
+    pdp:mentionsConcept d:Concept_SanksiAdministratif ;
+    pdp:occurrences 1 .
+
+d:Mention_353 a pdp:Mention ;
+    pdp:inProvision d:Pasal_61 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_354 a pdp:Mention ;
+    pdp:inProvision d:Pasal_62 ;
+    pdp:mentionsConcept d:Concept_KerjaSamaInternasional ;
+    pdp:occurrences 1 .
+
+d:Mention_355 a pdp:Mention ;
+    pdp:inProvision d:Pasal_64 ;
+    pdp:mentionsConcept d:Concept_Lembaga ;
+    pdp:occurrences 1 .
+
+d:Mention_356 a pdp:Mention ;
+    pdp:inProvision d:Pasal_64 ;
+    pdp:mentionsConcept d:Concept_Sengketa ;
+    pdp:occurrences 2 .
+
+d:Mention_357 a pdp:Mention ;
+    pdp:inProvision d:Pasal_64 ;
+    pdp:mentionsConcept d:Concept_Pembuktian ;
+    pdp:occurrences 1 .
+
+d:Mention_358 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_359 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Mention_36 a pdp:Mention ;
+    pdp:inProvision d:Pasal_6 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_360 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Larangan ;
+    pdp:occurrences 1 .
+
+d:Mention_361 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_362 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Larangan ;
+    pdp:occurrences 1 .
+
+d:Mention_363 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_3 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_364 a pdp:Mention ;
+    pdp:inProvision d:Pasal_65_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Larangan ;
+    pdp:occurrences 1 .
+
+d:Mention_365 a pdp:Mention ;
+    pdp:inProvision d:Pasal_66 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_366 a pdp:Mention ;
+    pdp:inProvision d:Pasal_66 ;
+    pdp:mentionsConcept d:Concept_Larangan ;
+    pdp:occurrences 1 .
+
+d:Mention_367 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_368 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_369 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_37 a pdp:Mention ;
+    pdp:inProvision d:Pasal_6 ;
+    pdp:mentionsConcept d:Concept_Perbaikan ;
+    pdp:occurrences 2 .
+
+d:Mention_370 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_371 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_372 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_373 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_374 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_3 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_375 a pdp:Mention ;
+    pdp:inProvision d:Pasal_67_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_376 a pdp:Mention ;
+    pdp:inProvision d:Pasal_68 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_377 a pdp:Mention ;
+    pdp:inProvision d:Pasal_68 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_378 a pdp:Mention ;
+    pdp:inProvision d:Pasal_68 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_379 a pdp:Mention ;
+    pdp:inProvision d:Pasal_69 ;
+    pdp:mentionsConcept d:Concept_CatatanKejahatan ;
+    pdp:occurrences 1 .
+
+d:Mention_38 a pdp:Mention ;
+    pdp:inProvision d:Pasal_7 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_380 a pdp:Mention ;
+    pdp:inProvision d:Pasal_69 ;
+    pdp:mentionsConcept d:Concept_GantiRugi ;
+    pdp:occurrences 1 .
+
+d:Mention_381 a pdp:Mention ;
+    pdp:inProvision d:Pasal_69 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 3 .
+
+d:Mention_382 a pdp:Mention ;
+    pdp:inProvision d:Pasal_69 ;
+    pdp:mentionsConcept d:Concept_PidanaTambahan ;
+    pdp:occurrences 2 .
+
+d:Mention_383 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_1 ;
+    pdp:mentionsConcept d:Concept_CatatanKejahatan ;
+    pdp:occurrences 1 .
+
+d:Mention_384 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Korporasi ;
+    pdp:occurrences 2 .
+
+d:Mention_385 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 2 .
+
+d:Mention_386 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Korporasi ;
+    pdp:occurrences 1 .
+
+d:Mention_387 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_388 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_2 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_389 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Korporasi ;
+    pdp:occurrences 1 .
+
+d:Mention_39 a pdp:Mention ;
+    pdp:inProvision d:Pasal_7 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_390 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_3 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 2 .
+
+d:Mention_391 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_3 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 2 .
+
+d:Mention_392 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Korporasi ;
+    pdp:occurrences 1 .
+
+d:Mention_393 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_4 ;
+    pdp:mentionsConcept d:Concept_GantiRugi ;
+    pdp:occurrences 1 .
+
+d:Mention_394 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_4 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_395 a pdp:Mention ;
+    pdp:inProvision d:Pasal_70_ayat_4 ;
+    pdp:mentionsConcept d:Concept_PidanaTambahan ;
+    pdp:occurrences 2 .
+
+d:Mention_396 a pdp:Mention ;
+    pdp:inProvision d:Pasal_71 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_397 a pdp:Mention ;
+    pdp:inProvision d:Pasal_71 ;
+    pdp:mentionsConcept d:Concept_SanksiPidana ;
+    pdp:occurrences 1 .
+
+d:Mention_398 a pdp:Mention ;
+    pdp:inProvision d:Pasal_72 ;
+    pdp:mentionsConcept d:Concept_Korporasi ;
+    pdp:occurrences 2 .
+
+d:Mention_399 a pdp:Mention ;
+    pdp:inProvision d:Pasal_72 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_4 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_40 a pdp:Mention ;
+    pdp:inProvision d:Pasal_7 ;
+    pdp:mentionsConcept d:Concept_Akses ;
+    pdp:occurrences 1 .
+
+d:Mention_400 a pdp:Mention ;
+    pdp:inProvision d:Pasal_73 ;
+    pdp:mentionsConcept d:Concept_GantiRugi ;
+    pdp:occurrences 1 .
+
+d:Mention_401 a pdp:Mention ;
+    pdp:inProvision d:Pasal_73 ;
+    pdp:mentionsConcept d:Concept_Sanksi ;
+    pdp:occurrences 1 .
+
+d:Mention_402 a pdp:Mention ;
+    pdp:inProvision d:Pasal_73 ;
+    pdp:mentionsConcept d:Concept_PidanaTambahan ;
+    pdp:occurrences 1 .
+
+d:Mention_403 a pdp:Mention ;
+    pdp:inProvision d:Pasal_74 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_404 a pdp:Mention ;
+    pdp:inProvision d:Pasal_74 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_405 a pdp:Mention ;
+    pdp:inProvision d:Pasal_74 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_406 a pdp:Mention ;
+    pdp:inProvision d:Pasal_74 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_407 a pdp:Mention ;
+    pdp:inProvision d:Pasal_74 ;
+    pdp:mentionsConcept d:Concept_Tenggat ;
+    pdp:occurrences 1 .
+
+d:Mention_408 a pdp:Mention ;
+    pdp:inProvision d:Pasal_75 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_409 a pdp:Mention ;
+    pdp:inProvision d:Pasal_75 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_41 a pdp:Mention ;
+    pdp:inProvision d:Pasal_8 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_42 a pdp:Mention ;
+    pdp:inProvision d:Pasal_8 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_43 a pdp:Mention ;
+    pdp:inProvision d:Pasal_8 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_44 a pdp:Mention ;
+    pdp:inProvision d:Pasal_8 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 2 .
+
+d:Mention_45 a pdp:Mention ;
+    pdp:inProvision d:Pasal_9 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_46 a pdp:Mention ;
+    pdp:inProvision d:Pasal_9 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_47 a pdp:Mention ;
+    pdp:inProvision d:Pasal_9 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_48 a pdp:Mention ;
+    pdp:inProvision d:Pasal_9 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_49 a pdp:Mention ;
+    pdp:inProvision d:Pasal_9 ;
+    pdp:mentionsConcept d:Concept_PenarikanPersetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_5 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_50 a pdp:Mention ;
+    pdp:inProvision d:Pasal_10_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_51 a pdp:Mention ;
+    pdp:inProvision d:Pasal_10_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Profiling ;
+    pdp:occurrences 2 .
+
+d:Mention_52 a pdp:Mention ;
+    pdp:inProvision d:Pasal_10_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_53 a pdp:Mention ;
+    pdp:inProvision d:Pasal_10_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Keberatan ;
+    pdp:occurrences 1 .
+
+d:Mention_54 a pdp:Mention ;
+    pdp:inProvision d:Pasal_11 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_55 a pdp:Mention ;
+    pdp:inProvision d:Pasal_11 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 2 .
+
+d:Mention_56 a pdp:Mention ;
+    pdp:inProvision d:Pasal_11 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_57 a pdp:Mention ;
+    pdp:inProvision d:Pasal_12_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_58 a pdp:Mention ;
+    pdp:inProvision d:Pasal_12_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_59 a pdp:Mention ;
+    pdp:inProvision d:Pasal_12_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_6 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_SetiapOrang ;
+    pdp:occurrences 1 .
+
+d:Mention_60 a pdp:Mention ;
+    pdp:inProvision d:Pasal_12_ayat_1 ;
+    pdp:mentionsConcept d:Concept_GantiRugi ;
+    pdp:occurrences 1 .
+
+d:Mention_61 a pdp:Mention ;
+    pdp:inProvision d:Pasal_13_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_62 a pdp:Mention ;
+    pdp:inProvision d:Pasal_13_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_63 a pdp:Mention ;
+    pdp:inProvision d:Pasal_13_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_64 a pdp:Mention ;
+    pdp:inProvision d:Pasal_13_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Portabilitas ;
+    pdp:occurrences 1 .
+
+d:Mention_65 a pdp:Mention ;
+    pdp:inProvision d:Pasal_14 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_66 a pdp:Mention ;
+    pdp:inProvision d:Pasal_15_ayat_1 ;
+    pdp:mentionsConcept d:Concept_KepentinganUmum ;
+    pdp:occurrences 1 .
+
+d:Mention_67 a pdp:Mention ;
+    pdp:inProvision d:Pasal_15_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataKeuangan ;
+    pdp:occurrences 1 .
+
+d:Mention_68 a pdp:Mention ;
+    pdp:inProvision d:Pasal_15_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Hak ;
+    pdp:occurrences 1 .
+
+d:Mention_69 a pdp:Mention ;
+    pdp:inProvision d:Pasal_15_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengecualian ;
+    pdp:occurrences 1 .
+
+d:Mention_7 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_BadanPublik ;
+    pdp:occurrences 1 .
+
+d:Mention_70 a pdp:Mention ;
+    pdp:inProvision d:Pasal_15_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 1 .
+
+d:Mention_71 a pdp:Mention ;
+    pdp:inProvision d:Pasal_16 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_72 a pdp:Mention ;
+    pdp:inProvision d:Pasal_16 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_73 a pdp:Mention ;
+    pdp:inProvision d:Pasal_16 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_74 a pdp:Mention ;
+    pdp:inProvision d:Pasal_16 ;
+    pdp:mentionsConcept d:Concept_Perbaikan ;
+    pdp:occurrences 1 .
+
+d:Mention_75 a pdp:Mention ;
+    pdp:inProvision d:Pasal_16 ;
+    pdp:mentionsConcept d:Concept_Penghapusan ;
+    pdp:occurrences 1 .
+
+d:Mention_76 a pdp:Mention ;
+    pdp:inProvision d:Pasal_17 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 1 .
+
+d:Mention_77 a pdp:Mention ;
+    pdp:inProvision d:Pasal_17 ;
+    pdp:mentionsConcept d:Concept_Keamanan ;
+    pdp:occurrences 1 .
+
+d:Mention_78 a pdp:Mention ;
+    pdp:inProvision d:Pasal_17 ;
+    pdp:mentionsConcept d:Concept_PengawasanVisual ;
+    pdp:occurrences 1 .
+
+d:Mention_79 a pdp:Mention ;
+    pdp:inProvision d:Pasal_17 ;
+    pdp:mentionsConcept d:Concept_Pemberitahuan ;
+    pdp:occurrences 1 .
+
+d:Mention_8 a pdp:Mention ;
+    pdp:inProvision d:Pasal_1 ;
+    pdp:mentionsConcept d:Concept_KerjaSamaInternasional ;
+    pdp:occurrences 1 .
+
+d:Mention_80 a pdp:Mention ;
+    pdp:inProvision d:Pasal_18 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_81 a pdp:Mention ;
+    pdp:inProvision d:Pasal_18 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_82 a pdp:Mention ;
+    pdp:inProvision d:Pasal_18 ;
+    pdp:mentionsConcept d:Concept_PemrosesanBersama ;
+    pdp:occurrences 1 .
+
+d:Mention_83 a pdp:Mention ;
+    pdp:inProvision d:Pasal_19 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_84 a pdp:Mention ;
+    pdp:inProvision d:Pasal_19 ;
+    pdp:mentionsConcept d:Concept_Prosesor ;
+    pdp:occurrences 1 .
+
+d:Mention_85 a pdp:Mention ;
+    pdp:inProvision d:Pasal_19 ;
+    pdp:mentionsConcept d:Concept_SetiapOrang ;
+    pdp:occurrences 1 .
+
+d:Mention_86 a pdp:Mention ;
+    pdp:inProvision d:Pasal_19 ;
+    pdp:mentionsConcept d:Concept_BadanPublik ;
+    pdp:occurrences 1 .
+
+d:Mention_87 a pdp:Mention ;
+    pdp:inProvision d:Pasal_19 ;
+    pdp:mentionsConcept d:Concept_KerjaSamaInternasional ;
+    pdp:occurrences 1 .
+
+d:Mention_88 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 2 .
+
+d:Mention_89 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pengendali ;
+    pdp:occurrences 1 .
+
+d:Mention_9 a pdp:Mention ;
+    pdp:inProvision d:Pasal_2 ;
+    pdp:mentionsConcept d:Concept_BadanPublik ;
+    pdp:occurrences 1 .
+
+d:Mention_90 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_91 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DasarPemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_92 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_1 ;
+    pdp:mentionsConcept d:Concept_Kewajiban ;
+    pdp:occurrences 1 .
+
+d:Mention_93 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pelindungan ;
+    pdp:occurrences 1 .
+
+d:Mention_94 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_2 ;
+    pdp:mentionsConcept d:Concept_KepentinganUmum ;
+    pdp:occurrences 1 .
+
+d:Mention_95 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Pemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_96 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_2 ;
+    pdp:mentionsConcept d:Concept_Persetujuan ;
+    pdp:occurrences 1 .
+
+d:Mention_97 a pdp:Mention ;
+    pdp:inProvision d:Pasal_20_ayat_2 ;
+    pdp:mentionsConcept d:Concept_DasarPemrosesan ;
+    pdp:occurrences 1 .
+
+d:Mention_98 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_DataPribadi ;
+    pdp:occurrences 3 .
+
+d:Mention_99 a pdp:Mention ;
+    pdp:inProvision d:Pasal_21_ayat_1 ;
+    pdp:mentionsConcept d:Concept_SubjekData ;
+    pdp:occurrences 1 .
+
+d:Concept_DataBiometrik a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "biometrik"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataBiometrik" ;
+    skos:prefLabel "Data biometrik"@id ;
+    pdp:verified false .
+
+d:Concept_DataGenetika a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "genetika"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataGenetika" ;
+    skos:prefLabel "Data genetika"@id ;
+    pdp:verified false .
+
+d:Concept_DataUmum a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "bersifat umum"@id ;
+    skos:broader d:Concept_DataPribadi ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataUmum" ;
+    skos:prefLabel "Data Pribadi umum"@id ;
+    pdp:verified false .
+
+d:Concept_Keberatan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "keberatan"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Keberatan" ;
+    skos:prefLabel "Hak keberatan"@id ;
+    pdp:verified false .
+
+d:Concept_KehatiHatian a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kehati-hatian"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "KehatiHatian" ;
+    skos:prefLabel "Kehati-hatian"@id ;
+    pdp:verified false .
+
+d:Concept_Kemanfaatan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kemanfaatan"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Kemanfaatan" ;
+    skos:prefLabel "Kemanfaatan"@id ;
+    pdp:verified false .
+
+d:Concept_KepastianHukum a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kepastian hukum"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "KepastianHukum" ;
+    skos:prefLabel "Kepastian hukum"@id ;
+    pdp:verified false .
+
+d:Concept_Keseimbangan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "keseimbangan"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Keseimbangan" ;
+    skos:prefLabel "Keseimbangan"@id ;
+    pdp:verified false .
+
+d:Concept_PemrosesanBersama a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "pemrosesan bersama"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PemrosesanBersama" ;
+    skos:prefLabel "Pemrosesan bersama"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_PengawasanVisual a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "data visual"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PengawasanVisual" ;
+    skos:prefLabel "Alat pemroses data visual"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Portabilitas a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "portabilitas"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Portabilitas" ;
+    skos:prefLabel "Portabilitas data"@id ;
+    pdp:verified false .
+
+d:Concept_TransferData a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "negara tujuan"@id,
+        "transfer"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "TransferData" ;
+    skos:prefLabel "Transfer data pribadi"@id ;
+    pdp:verified false .
+
+d:Concept_DasarPemrosesan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "dasar pemrosesan"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DasarPemrosesan" ;
+    skos:prefLabel "Dasar pemrosesan"@id ;
+    pdp:verified false .
+
+d:Concept_DataKesehatan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kesehatan"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataKesehatan" ;
+    skos:prefLabel "Data kesehatan"@id ;
+    pdp:verified false .
+
+d:Concept_KegagalanPDP a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kegagalan pelindungan"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "KegagalanPDP" ;
+    skos:prefLabel "Kegagalan pelindungan data pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Kerahasiaan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kerahasiaan"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Kerahasiaan" ;
+    skos:prefLabel "Kerahasiaan"@id ;
+    pdp:verified false .
+
+d:Concept_PejabatPDP a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "pejabat pelindungan"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PejabatPDP" ;
+    skos:prefLabel "Pejabat atau petugas pelindungan data pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Pembuktian a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "bukti"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pembuktian" ;
+    skos:prefLabel "Pembuktian persetujuan"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_PenilaianDampak a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "penilaian dampak"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PenilaianDampak" ;
+    skos:prefLabel "Penilaian dampak pelindungan data"@id ;
+    pdp:verified false .
+
+d:Concept_Profiling a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "otomatis"@id,
+        "pemrofilan"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Profiling" ;
+    skos:prefLabel "Pemrofilan dan keputusan otomatis"@id ;
+    pdp:verified false .
+
+d:Concept_Sengketa a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "arbitrase"@id,
+        "sengketa"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Sengketa" ;
+    skos:prefLabel "Penyelesaian sengketa"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_SetiapOrang a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "setiap orang"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "SetiapOrang" ;
+    skos:prefLabel "Setiap Orang"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_BadanPublik a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "badan publik"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "BadanPublik" ;
+    skos:prefLabel "Badan Publik"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_DataAnak a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "anak"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataAnak" ;
+    skos:prefLabel "Data anak"@id ;
+    pdp:verified false .
+
+d:Concept_DataKeuangan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "keuangan"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "DataKeuangan" ;
+    skos:prefLabel "Data keuangan pribadi"@id ;
+    pdp:verified false .
+
+d:Concept_PenarikanPersetujuan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "menarik"@id,
+        "penarikan"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PenarikanPersetujuan" ;
+    skos:prefLabel "Penarikan persetujuan"@id ;
+    pdp:verified false .
+
+d:Concept_Pengecualian a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "dikecualikan"@id,
+        "pengecualian"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pengecualian" ;
+    skos:prefLabel "Pengecualian"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_PidanaTambahan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "perampasan"@id,
+        "pidana tambahan"@id ;
+    skos:broader d:Concept_Sanksi ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "PidanaTambahan" ;
+    skos:prefLabel "Pidana tambahan"@id ;
+    pdp:verified false .
+
+d:Concept_Retensi a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "retensi"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Retensi" ;
+    skos:prefLabel "Retensi data"@id ;
+    pdp:verified false .
+
+d:Concept_Akses a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "akses"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Akses" ;
+    skos:prefLabel "Hak akses dan salinan"@id ;
+    pdp:verified false .
+
+d:Concept_CatatanKejahatan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "catatan kejahatan"@id,
+        "tindak pidana"@id ;
+    skos:broader d:Concept_DataSpesifik ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "CatatanKejahatan" ;
+    skos:prefLabel "Catatan kejahatan"@id ;
+    pdp:verified false .
+
+d:Concept_GantiRugi a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "ganti kerugian"@id,
+        "ganti rugi"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "GantiRugi" ;
+    skos:prefLabel "Ganti rugi"@id ;
+    pdp:verified false .
+
+d:Concept_KepentinganUmum a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kepentingan umum"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "KepentinganUmum" ;
+    skos:prefLabel "Kepentingan umum"@id ;
+    pdp:verified false .
+
+d:Concept_KerjaSamaInternasional a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "kerja sama internasional"@id,
+        "organisasi internasional"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "KerjaSamaInternasional" ;
+    skos:prefLabel "Kerja sama internasional"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Larangan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "dilarang"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Larangan" ;
+    skos:prefLabel "Larangan"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Perbaikan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "memperbaiki"@id,
+        "memperbarui"@id,
+        "perbaikan"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Perbaikan" ;
+    skos:prefLabel "Hak perbaikan data"@id ;
+    pdp:verified false .
+
+d:Concept_Pertanggungjawaban a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "bertanggung jawab"@id,
+        "pertanggungjawaban"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pertanggungjawaban" ;
+    skos:prefLabel "Pertanggungjawaban"@id ;
+    pdp:verified false .
+
+d:Concept_Korporasi a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "korporasi"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Korporasi" ;
+    skos:prefLabel "Korporasi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_SanksiAdministratif a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "denda administratif"@id,
+        "peringatan tertulis"@id,
+        "sanksi administratif"@id ;
+    skos:broader d:Concept_Sanksi ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "SanksiAdministratif" ;
+    skos:prefLabel "Sanksi administratif"@id ;
+    pdp:verified false .
+
+d:Concept_Tenggat3x24 a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "3x24 jam"@id ;
+    skos:broader d:Concept_Tenggat ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Tenggat3x24" ;
+    skos:prefLabel "Tenggat 3x24 jam"@id ;
+    pdp:verified false .
+
+d:Concept_Penghapusan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "memusnahkan"@id,
+        "menghapus"@id,
+        "pemusnahan"@id,
+        "penghapusan"@id ;
+    skos:broader d:Concept_Hak ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Penghapusan" ;
+    skos:prefLabel "Penghapusan dan pemusnahan"@id ;
+    pdp:verified false .
+
+d:Concept_Keamanan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "keamanan"@id,
+        "melindungi"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Keamanan" ;
+    skos:prefLabel "Keamanan data"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_SanksiPidana a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "denda paling banyak"@id,
+        "pidana denda"@id,
+        "pidana penjara"@id ;
+    skos:broader d:Concept_Sanksi ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "SanksiPidana" ;
+    skos:prefLabel "Pidana penjara dan denda"@id ;
+    pdp:verified false .
+
+d:Concept_Lembaga a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "lembaga"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Lembaga" ;
+    skos:prefLabel "Lembaga pelindungan data pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Asas a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "asas"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_KehatiHatian,
+        d:Concept_Kemanfaatan,
+        d:Concept_KepastianHukum,
+        d:Concept_KepentinganUmum,
+        d:Concept_Kerahasiaan,
+        d:Concept_Keseimbangan,
+        d:Concept_Pelindungan,
+        d:Concept_Pertanggungjawaban ;
+    skos:notation "Asas" ;
+    skos:prefLabel "Asas pelindungan data pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Pemberitahuan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "memberitahukan"@id,
+        "pemberitahuan"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pemberitahuan" ;
+    skos:prefLabel "Pemberitahuan kepada Subjek Data"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Prosesor a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "prosesor"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Prosesor" ;
+    skos:prefLabel "Prosesor Data Pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_DataSpesifik a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "spesifik"@id ;
+    skos:broader d:Concept_DataPribadi ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_CatatanKejahatan,
+        d:Concept_DataAnak,
+        d:Concept_DataBiometrik,
+        d:Concept_DataGenetika,
+        d:Concept_DataKesehatan,
+        d:Concept_DataKeuangan ;
+    skos:notation "DataSpesifik" ;
+    skos:prefLabel "Data Pribadi spesifik"@id ;
+    pdp:verified false .
+
+d:Concept_Tenggat a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "paling lama"@id,
+        "paling lambat"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_Tenggat3x24 ;
+    skos:notation "Tenggat" ;
+    skos:prefLabel "Tenggat waktu"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Persetujuan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "persetujuan"@id ;
+    skos:broader d:Concept_Pemrosesan ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Persetujuan" ;
+    skos:prefLabel "Persetujuan"@id ;
+    pdp:verified false .
+
+d:Concept_Pelindungan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "pelindungan"@id ;
+    skos:broader d:Concept_Asas ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pelindungan" ;
+    skos:prefLabel "Pelindungan"@id ;
+    pdp:verified false .
+
+d:Concept_SubjekData a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "subjek data"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "SubjekData" ;
+    skos:prefLabel "Subjek Data Pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Sanksi a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "dipidana"@id,
+        "pidana"@id,
+        "sanksi"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_PidanaTambahan,
+        d:Concept_SanksiAdministratif,
+        d:Concept_SanksiPidana ;
+    skos:notation "Sanksi" ;
+    skos:prefLabel "Sanksi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Hak a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "hak"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_Akses,
+        d:Concept_GantiRugi,
+        d:Concept_Keberatan,
+        d:Concept_PenarikanPersetujuan,
+        d:Concept_Penghapusan,
+        d:Concept_Perbaikan,
+        d:Concept_Portabilitas ;
+    skos:notation "Hak" ;
+    skos:prefLabel "Hak Subjek Data"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Kewajiban a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "wajib"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Kewajiban" ;
+    skos:prefLabel "Kewajiban pengendali dan prosesor"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Pemrosesan a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "memproses"@id,
+        "pemrosesan"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_DasarPemrosesan,
+        d:Concept_PenilaianDampak,
+        d:Concept_Persetujuan,
+        d:Concept_Profiling,
+        d:Concept_Retensi,
+        d:Concept_TransferData ;
+    skos:notation "Pemrosesan" ;
+    skos:prefLabel "Pemrosesan Data Pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_Pengendali a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "pengendali"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:notation "Pengendali" ;
+    skos:prefLabel "Pengendali Data Pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:Concept_DataPribadi a skos:Concept,
+        pdp:Concept ;
+    skos:altLabel "data"@id,
+        "data pribadi"@id ;
+    skos:inScheme d:PDP_Concept_Scheme ;
+    skos:narrower d:Concept_DataSpesifik,
+        d:Concept_DataUmum ;
+    skos:notation "DataPribadi" ;
+    skos:prefLabel "Data Pribadi"@id ;
+    skos:topConceptOf d:PDP_Concept_Scheme ;
+    pdp:verified false .
+
+d:PDP_Concept_Scheme a skos:ConceptScheme ;
+    dcterms:title "Skema konsep UU PDP"@id ;
+    skos:hasTopConcept d:Concept_Asas,
+        d:Concept_BadanPublik,
+        d:Concept_DataPribadi,
+        d:Concept_Hak,
+        d:Concept_Keamanan,
+        d:Concept_KegagalanPDP,
+        d:Concept_KerjaSamaInternasional,
+        d:Concept_Kewajiban,
+        d:Concept_Korporasi,
+        d:Concept_Larangan,
+        d:Concept_Lembaga,
+        d:Concept_PejabatPDP,
+        d:Concept_Pemberitahuan,
+        d:Concept_Pembuktian,
+        d:Concept_Pemrosesan,
+        d:Concept_PemrosesanBersama,
+        d:Concept_PengawasanVisual,
+        d:Concept_Pengecualian,
+        d:Concept_Pengendali,
+        d:Concept_Prosesor,
+        d:Concept_Sanksi,
+        d:Concept_Sengketa,
+        d:Concept_SetiapOrang,
+        d:Concept_SubjekData,
+        d:Concept_Tenggat .
+
+pdp:Mention a owl:Class .
+

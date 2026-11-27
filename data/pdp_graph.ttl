@@ -1,0 +1,2537 @@
+@prefix d: <https://pdp-graph.example.org/data/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pdp: <https://pdp-graph.example.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:Concept_DataPribadi a pdp:Concept ;
+    skos:prefLabel "Data Pribadi"@id ;
+    pdp:definedIn d:Pasal_1 .
+
+d:Concept_Lembaga a pdp:Concept ;
+    skos:prefLabel "Lembaga penyelenggara pelindungan data pribadi"@id ;
+    pdp:definedIn d:Pasal_58 .
+
+d:Concept_PelindunganDataPribadi a pdp:Concept ;
+    skos:prefLabel "Pelindungan Data Pribadi"@id ;
+    pdp:definedIn d:Pasal_1 .
+
+d:Concept_PengendaliDataPribadi a pdp:Concept ;
+    skos:prefLabel "Pengendali Data Pribadi"@id ;
+    pdp:definedIn d:Pasal_1 .
+
+d:Concept_ProsesorDataPribadi a pdp:Concept ;
+    skos:prefLabel "Prosesor Data Pribadi"@id ;
+    pdp:definedIn d:Pasal_1 .
+
+d:Concept_SubjekDataPribadi a pdp:Concept ;
+    skos:prefLabel "Subjek Data Pribadi"@id ;
+    pdp:definedIn d:Pasal_1 .
+
+d:Pemerintah a pdp:Actor ;
+    rdfs:label "Pemerintah"@id .
+
+d:UU_27_2022 a pdp:LegalDocument ;
+    dcterms:identifier "LN 2022 No. 196, TLN No. 6820" ;
+    dcterms:issued "2022-10-17"^^xsd:date ;
+    dcterms:title "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi"@id ;
+    pdp:hasPart d:Bab_I,
+        d:Bab_II,
+        d:Bab_III,
+        d:Bab_IV,
+        d:Bab_IX,
+        d:Bab_V,
+        d:Bab_VI,
+        d:Bab_VII,
+        d:Bab_VIII,
+        d:Bab_X,
+        d:Bab_XI,
+        d:Bab_XII,
+        d:Bab_XIII,
+        d:Bab_XIV,
+        d:Bab_XV,
+        d:Bab_XVI .
+
+pdp:appliesTo a owl:ObjectProperty .
+
+pdp:concernsData a owl:ObjectProperty .
+
+pdp:definedIn a owl:ObjectProperty .
+
+pdp:grantsRight a owl:ObjectProperty ;
+    rdfs:subPropertyOf pdp:establishesNorm .
+
+pdp:hasDeadline a owl:ObjectProperty .
+
+pdp:imposesObligation a owl:ObjectProperty ;
+    rdfs:subPropertyOf pdp:establishesNorm .
+
+pdp:imposesProhibition a owl:ObjectProperty ;
+    rdfs:subPropertyOf pdp:establishesNorm .
+
+pdp:isExceptionFor a owl:ObjectProperty ;
+    owl:inverseOf pdp:hasException .
+
+pdp:partOf a owl:ObjectProperty ;
+    owl:inverseOf pdp:hasPart .
+
+pdp:referredBy a owl:ObjectProperty ;
+    owl:inverseOf pdp:refersTo .
+
+pdp:sanctionedBy a owl:ObjectProperty .
+
+d:Bab_I a pdp:Bab ;
+    rdfs:label "Bab I Ketentuan Umum"@id ;
+    pdp:hasPart d:Pasal_1,
+        d:Pasal_2 .
+
+d:Bab_II a pdp:Bab ;
+    rdfs:label "Bab II Asas"@id ;
+    pdp:hasPart d:Pasal_3 .
+
+d:Bab_III a pdp:Bab ;
+    rdfs:label "Bab III Jenis Data Pribadi"@id ;
+    pdp:hasPart d:Pasal_4 .
+
+d:Bab_IV a pdp:Bab ;
+    rdfs:label "Bab IV Hak Subjek Data Pribadi"@id ;
+    pdp:hasPart d:Pasal_10,
+        d:Pasal_11,
+        d:Pasal_12,
+        d:Pasal_13,
+        d:Pasal_14,
+        d:Pasal_15,
+        d:Pasal_5,
+        d:Pasal_6,
+        d:Pasal_7,
+        d:Pasal_8,
+        d:Pasal_9 .
+
+d:Bab_IX a pdp:Bab ;
+    rdfs:label "Bab IX Kelembagaan"@id ;
+    pdp:hasPart d:Pasal_58,
+        d:Pasal_59,
+        d:Pasal_60,
+        d:Pasal_61 .
+
+d:Bab_V a pdp:Bab ;
+    rdfs:label "Bab V Pemrosesan Data Pribadi"@id ;
+    pdp:hasPart d:Pasal_16,
+        d:Pasal_17,
+        d:Pasal_18 .
+
+d:Bab_VI a pdp:Bab ;
+    rdfs:label "Bab VI Kewajiban Pengendali dan Prosesor"@id ;
+    pdp:hasPart d:Pasal_19,
+        d:Pasal_20,
+        d:Pasal_21,
+        d:Pasal_22,
+        d:Pasal_23,
+        d:Pasal_24,
+        d:Pasal_25,
+        d:Pasal_26,
+        d:Pasal_27,
+        d:Pasal_28,
+        d:Pasal_29,
+        d:Pasal_30,
+        d:Pasal_31,
+        d:Pasal_32,
+        d:Pasal_33,
+        d:Pasal_34,
+        d:Pasal_35,
+        d:Pasal_36,
+        d:Pasal_37,
+        d:Pasal_38,
+        d:Pasal_39,
+        d:Pasal_40,
+        d:Pasal_41,
+        d:Pasal_42,
+        d:Pasal_43,
+        d:Pasal_44,
+        d:Pasal_45,
+        d:Pasal_46,
+        d:Pasal_47,
+        d:Pasal_48,
+        d:Pasal_49,
+        d:Pasal_50,
+        d:Pasal_51,
+        d:Pasal_52,
+        d:Pasal_53,
+        d:Pasal_54 .
+
+d:Bab_VII a pdp:Bab ;
+    rdfs:label "Bab VII Transfer Data Pribadi"@id ;
+    pdp:hasPart d:Pasal_55,
+        d:Pasal_56 .
+
+d:Bab_VIII a pdp:Bab ;
+    rdfs:label "Bab VIII Sanksi Administratif"@id ;
+    pdp:hasPart d:Pasal_57 .
+
+d:Bab_X a pdp:Bab ;
+    rdfs:label "Bab X Kerja Sama Internasional"@id ;
+    pdp:hasPart d:Pasal_62 .
+
+d:Bab_XI a pdp:Bab ;
+    rdfs:label "Bab XI Partisipasi Masyarakat"@id ;
+    pdp:hasPart d:Pasal_63 .
+
+d:Bab_XII a pdp:Bab ;
+    rdfs:label "Bab XII Penyelesaian Sengketa dan Hukum Acara"@id ;
+    pdp:hasPart d:Pasal_64 .
+
+d:Bab_XIII a pdp:Bab ;
+    rdfs:label "Bab XIII Larangan dalam Penggunaan Data Pribadi"@id ;
+    pdp:hasPart d:Pasal_65,
+        d:Pasal_66 .
+
+d:Bab_XIV a pdp:Bab ;
+    rdfs:label "Bab XIV Ketentuan Pidana"@id ;
+    pdp:hasPart d:Pasal_67,
+        d:Pasal_68,
+        d:Pasal_69,
+        d:Pasal_70,
+        d:Pasal_71,
+        d:Pasal_72,
+        d:Pasal_73 .
+
+d:Bab_XV a pdp:Bab ;
+    rdfs:label "Bab XV Ketentuan Peralihan"@id ;
+    pdp:hasPart d:Pasal_74,
+        d:Pasal_75 .
+
+d:Bab_XVI a pdp:Bab ;
+    rdfs:label "Bab XVI Ketentuan Penutup"@id ;
+    pdp:hasPart d:Pasal_76 .
+
+d:Deadline_2_tahun a pdp:Deadline ;
+    rdfs:label "2 tahun"@id .
+
+d:Norm_12_1 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 12 ayat (1)"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:ringkasan "Hak menggugat dan menerima ganti rugi atas pelanggaran pemrosesan data tentang dirinya."@id .
+
+d:Norm_20_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 20 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memiliki dasar pemrosesan Data Pribadi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_21_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 21 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Berdasarkan persetujuan, Pengendali wajib menyampaikan informasi legalitas, tujuan, jenis dan relevansi data, jangka waktu retensi dokumen, rincian data, jangka waktu pemrosesan, dan hak Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_21_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 21 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data atas perubahan informasi sebelum perubahan berlaku."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_22_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 22 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Persetujuan pemrosesan dilakukan melalui persetujuan tertulis atau terekam, secara elektronik atau nonelektronik."@id .
+
+d:Norm_22_4 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 22 ayat (4)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Jika persetujuan memuat tujuan lain, permintaan harus dapat dibedakan secara jelas, dalam format yang dapat dipahami dan diakses, dengan bahasa sederhana dan jelas."@id .
+
+d:Norm_24_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 24"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib menunjukkan bukti persetujuan yang telah diberikan Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_25_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 25 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:concernsData d:DataAnak ;
+    pdp:ringkasan "Pemrosesan data anak diselenggarakan secara khusus."@id .
+
+d:Norm_26_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 26 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pemrosesan data penyandang disabilitas diselenggarakan secara khusus."@id .
+
+d:Norm_27_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 27"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melakukan pemrosesan secara terbatas dan spesifik, sah secara hukum, dan transparan."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_28_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 28"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melakukan pemrosesan sesuai tujuan pemrosesan."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_29_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 29"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memastikan akurasi, kelengkapan, dan konsistensi data dengan melakukan verifikasi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_30_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 30 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memberitahukan hasil pembaruan atau perbaikan kepada Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_31_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 31"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib merekam seluruh kegiatan pemrosesan data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_32_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 32 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasDeadline d:Deadline_3x24_jam ;
+    pdp:ringkasan "Akses diberikan paling lambat 3x24 jam sejak permintaan diterima."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_33_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 33"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib menolak permintaan akses atau perubahan jika membahayakan keamanan atau kesehatan fisik dan mental, mengungkap data orang lain, atau bertentangan dengan pertahanan dan keamanan nasional."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_34_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 34 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melakukan penilaian dampak pelindungan data pribadi untuk pemrosesan berisiko tinggi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_35_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 35"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melindungi dan memastikan keamanan data dengan langkah teknis operasional dan penetapan tingkat keamanan sesuai sifat dan risiko data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_37_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 37"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melakukan pengawasan terhadap setiap pihak yang terlibat dalam pemrosesan di bawah kendalinya."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_38_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 38"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib melindungi data dari pemrosesan yang tidak sah."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_39_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 39 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib mencegah data diakses secara tidak sah."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_40_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 40 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib menghentikan pemrosesan jika Subjek Data menarik persetujuan."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_40_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 40 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasDeadline d:Deadline_3x24_jam ;
+    pdp:ringkasan "Penghentian dilakukan paling lambat 3x24 jam sejak permintaan penarikan persetujuan diterima."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_41_3 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 41 ayat (3)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data setelah penundaan atau pembatasan berlaku."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_46_3 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 46 ayat (3)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Dalam hal tertentu, Pengendali wajib memberitahukan kepada masyarakat mengenai kegagalan pelindungan data pribadi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_47_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 47"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib bertanggung jawab atas pemrosesan dan menunjukkan pertanggungjawabannya dalam memenuhi prinsip pelindungan data pribadi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_48_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 48 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali berbentuk badan hukum yang melakukan penggabungan, pemisahan, pengambilalihan, peleburan, atau pembubaran wajib menyampaikan pemberitahuan pengalihan data kepada Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_49_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 49"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi,
+        d:ProsesorDataPribadi ;
+    pdp:ringkasan "Pengendali dan/atau Prosesor wajib mematuhi perintah lembaga dalam rangka penyelenggaraan undang-undang ini."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_51_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 51 ayat (1)"@id ;
+    pdp:appliesTo d:ProsesorDataPribadi ;
+    pdp:ringkasan "Prosesor wajib melakukan pemrosesan berdasarkan perintah Pengendali."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_51_5 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 51 ayat (5)"@id ;
+    pdp:appliesTo d:ProsesorDataPribadi ;
+    pdp:ringkasan "Prosesor wajib memperoleh persetujuan tertulis Pengendali sebelum melibatkan Prosesor lain."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_52_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 52"@id ;
+    pdp:appliesTo d:ProsesorDataPribadi ;
+    pdp:ringkasan "Kewajiban Pengendali pada Pasal 29, 31, 35, 36, 37, 38, dan 39 berlaku juga bagi Prosesor."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_53_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 53 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi,
+        d:ProsesorDataPribadi ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:ringkasan "Pengendali dan Prosesor wajib menunjuk pejabat pelindungan data pribadi jika untuk pelayanan publik, kegiatan inti berupa pemantauan sistematis skala besar, atau kegiatan inti pemrosesan data spesifik dan/atau tindak pidana skala besar."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_54_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 54 ayat (1)"@id ;
+    pdp:appliesTo d:PejabatPelindungDataPribadi ;
+    pdp:ringkasan "Pejabat pelindungan data pribadi paling sedikit menginformasikan dan memberi saran kepatuhan, memantau kepatuhan, memberi saran penilaian dampak, serta berkoordinasi dan menjadi narahubung."@id .
+
+d:Norm_55_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 55 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali pengirim dan penerima di wilayah Indonesia wajib melakukan pelindungan data sesuai undang-undang ini."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_56_2 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 56 ayat (2)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Pengendali wajib memastikan negara tujuan transfer memiliki tingkat pelindungan setara atau lebih tinggi."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_56_3 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 56 ayat (3)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Jika ayat (2) tidak terpenuhi, Pengendali wajib memastikan pelindungan yang memadai dan bersifat mengikat."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_56_4 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 56 ayat (4)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:ringkasan "Jika ayat (2) dan (3) tidak terpenuhi, Pengendali wajib memperoleh persetujuan Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_5_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 5"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:ringkasan "Hak mendapatkan informasi tentang kejelasan identitas, dasar kepentingan hukum, tujuan permintaan dan penggunaan data, serta akuntabilitas pihak yang meminta."@id .
+
+d:Norm_65_1 a pdp:Larangan ;
+    rdfs:label "Larangan pada Pasal 65 ayat (1)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:ringkasan "Dilarang secara melawan hukum memperoleh atau mengumpulkan data milik orang lain untuk menguntungkan diri sendiri atau orang lain yang dapat mengakibatkan kerugian Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_67_1,
+        d:Norm_69_0 .
+
+d:Norm_65_2 a pdp:Larangan ;
+    rdfs:label "Larangan pada Pasal 65 ayat (2)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:ringkasan "Dilarang secara melawan hukum mengungkapkan data milik orang lain."@id ;
+    pdp:sanctionedBy d:Norm_67_2,
+        d:Norm_69_0 .
+
+d:Norm_65_3 a pdp:Larangan ;
+    rdfs:label "Larangan pada Pasal 65 ayat (3)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:ringkasan "Dilarang secara melawan hukum menggunakan data milik orang lain."@id ;
+    pdp:sanctionedBy d:Norm_67_3,
+        d:Norm_69_0 .
+
+d:Norm_66_0 a pdp:Larangan ;
+    rdfs:label "Larangan pada Pasal 66"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:ringkasan "Dilarang membuat data palsu atau memalsukan data untuk menguntungkan diri sendiri atau orang lain yang dapat merugikan orang lain."@id ;
+    pdp:sanctionedBy d:Norm_68_0,
+        d:Norm_69_0 .
+
+d:Norm_6_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 6"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:ringkasan "Hak melengkapi, memperbarui, dan/atau memperbaiki kesalahan data tentang dirinya sesuai tujuan pemrosesan."@id .
+
+d:Norm_70_2 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 70 ayat (2)"@id ;
+    pdp:appliesTo d:Korporasi ;
+    pdp:ringkasan "Korporasi hanya dapat dijatuhi pidana denda."@id ;
+    pdp:sanksiTipe "PidanaKorporasi" .
+
+d:Norm_70_3 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 70 ayat (3)"@id ;
+    pdp:appliesTo d:Korporasi ;
+    pdp:fineMultiplier 10 ;
+    pdp:ringkasan "Pidana denda yang dijatuhkan kepada korporasi paling banyak 10 kali dari maksimum pidana denda yang diancamkan."@id ;
+    pdp:sanksiTipe "PidanaKorporasi" .
+
+d:Norm_70_4 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 70 ayat (4)"@id ;
+    pdp:appliesTo d:Korporasi ;
+    pdp:ringkasan "Korporasi dapat dijatuhi pidana tambahan berupa perampasan keuntungan, pembekuan usaha, pelarangan permanen, penutupan tempat usaha, pelaksanaan kewajiban yang dilalaikan, ganti kerugian, pencabutan izin, dan/atau pembubaran."@id ;
+    pdp:sanksiTipe "PidanaTambahanKorporasi" .
+
+d:Norm_74_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 74"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi,
+        d:ProsesorDataPribadi ;
+    pdp:hasDeadline d:Deadline_2_tahun ;
+    pdp:ringkasan "Pengendali, Prosesor, dan pihak terkait wajib menyesuaikan dengan ketentuan pemrosesan paling lama 2 tahun sejak undang-undang diundangkan."@id .
+
+d:Norm_7_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 7"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:ringkasan "Hak mendapatkan akses dan memperoleh salinan data tentang dirinya."@id .
+
+d:Pasal_10 a pdp:Pasal ;
+    rdfs:label "Pasal 10"@id ;
+    dcterms:identifier "Pasal 10" ;
+    pdp:hasPart d:Pasal_10_ayat_1 .
+
+d:Pasal_12 a pdp:Pasal ;
+    rdfs:label "Pasal 12"@id ;
+    dcterms:identifier "Pasal 12" ;
+    pdp:hasPart d:Pasal_12_ayat_1 .
+
+d:Pasal_12_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 12 ayat (1)"@id ;
+    pdp:grantsRight d:Norm_12_1 ;
+    pdp:pasalNumber 12 ;
+    pdp:ringkasan "Hak menggugat dan menerima ganti rugi atas pelanggaran pemrosesan data tentang dirinya."@id ;
+    pdp:verified false .
+
+d:Pasal_13 a pdp:Pasal ;
+    rdfs:label "Pasal 13"@id ;
+    dcterms:identifier "Pasal 13" ;
+    pdp:hasPart d:Pasal_13_ayat_1 .
+
+d:Pasal_14 a pdp:Pasal ;
+    rdfs:label "Pasal 14"@id ;
+    dcterms:identifier "Pasal 14" ;
+    pdp:pasalNumber 14 ;
+    pdp:ringkasan "Permintaan pelaksanaan hak dicatat dan disampaikan secara elektronik atau nonelektronik."@id ;
+    pdp:verified false .
+
+d:Pasal_15 a pdp:Pasal ;
+    rdfs:label "Pasal 15"@id ;
+    dcterms:identifier "Pasal 15" ;
+    pdp:hasPart d:Pasal_15_ayat_1 .
+
+d:Pasal_15_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 15 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "kepentingan pertahanan dan keamanan nasional"@id ;
+    pdp:verified false .
+
+d:Pasal_15_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 15 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "kepentingan proses penegakan hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_15_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 15 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "kepentingan umum dalam rangka penyelenggaraan negara"@id ;
+    pdp:verified false .
+
+d:Pasal_15_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 15 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "kepentingan pengawasan sektor jasa keuangan, moneter, sistem pembayaran, dan stabilitas sistem keuangan"@id ;
+    pdp:verified false .
+
+d:Pasal_15_ayat_1_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 15 ayat (1) huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "kepentingan statistik dan penelitian ilmiah"@id ;
+    pdp:verified false .
+
+d:Pasal_16 a pdp:Pasal ;
+    rdfs:label "Pasal 16"@id ;
+    dcterms:identifier "Pasal 16" ;
+    pdp:pasalNumber 16 ;
+    pdp:ringkasan "Pemrosesan meliputi perolehan, pengolahan, penyimpanan, perbaikan, pengungkapan, dan penghapusan, dan dilakukan sesuai prinsip pelindungan data pribadi."@id ;
+    pdp:verified false .
+
+d:Pasal_17 a pdp:Pasal ;
+    rdfs:label "Pasal 17"@id ;
+    dcterms:identifier "Pasal 17" ;
+    pdp:pasalNumber 17 ;
+    pdp:ringkasan "Pemasangan alat pemroses data visual di tempat umum harus untuk keamanan, pencegahan bencana, atau penyelenggaraan lalu lintas, disertai pemberitahuan, dan tidak untuk mengidentifikasi orang."@id ;
+    pdp:verified false .
+
+d:Pasal_18 a pdp:Pasal ;
+    rdfs:label "Pasal 18"@id ;
+    dcterms:identifier "Pasal 18" ;
+    pdp:pasalNumber 18 ;
+    pdp:ringkasan "Pengendali dapat melakukan pemrosesan bersama dengan perjanjian tertulis yang menetapkan peran, tanggung jawab, dan narahubung."@id ;
+    pdp:verified false .
+
+d:Pasal_19 a pdp:Pasal ;
+    rdfs:label "Pasal 19"@id ;
+    dcterms:identifier "Pasal 19" ;
+    pdp:pasalNumber 19 ;
+    pdp:ringkasan "Pengendali dan Prosesor meliputi setiap orang, badan publik, dan organisasi internasional."@id ;
+    pdp:verified false .
+
+d:Pasal_2 a pdp:Pasal ;
+    rdfs:label "Pasal 2"@id ;
+    dcterms:identifier "Pasal 2" ;
+    pdp:pasalNumber 2 ;
+    pdp:ringkasan "Berlaku bagi orang perseorangan, badan publik, dan organisasi internasional, termasuk perbuatan di luar Indonesia yang berakibat hukum di Indonesia. Tidak berlaku untuk kegiatan pribadi atau rumah tangga."@id ;
+    pdp:verified false .
+
+d:Pasal_20 a pdp:Pasal ;
+    rdfs:label "Pasal 20"@id ;
+    dcterms:identifier "Pasal 20" ;
+    pdp:hasPart d:Pasal_20_ayat_1,
+        d:Pasal_20_ayat_2 .
+
+d:Pasal_20_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "persetujuan yang sah secara eksplisit dari Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "pemenuhan kewajiban perjanjian"@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "pemenuhan kewajiban hukum Pengendali"@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "pemenuhan pelindungan kepentingan vital Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "pelaksanaan tugas kepentingan umum atau kewenangan Pengendali"@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 20 ayat (2) huruf f"@id ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "pemenuhan kepentingan yang sah lainnya"@id ;
+    pdp:verified false .
+
+d:Pasal_21 a pdp:Pasal ;
+    rdfs:label "Pasal 21"@id ;
+    dcterms:identifier "Pasal 21" ;
+    pdp:hasPart d:Pasal_21_ayat_1,
+        d:Pasal_21_ayat_2 .
+
+d:Pasal_21_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "legalitas pemrosesan"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "tujuan pemrosesan"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "jenis dan relevansi data yang akan diproses"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "jangka waktu retensi dokumen"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "rincian mengenai informasi yang dikumpulkan"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf f"@id ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "jangka waktu pemrosesan"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1_huruf_g a pdp:Huruf ;
+    rdfs:label "Pasal 21 ayat (1) huruf g"@id ;
+    pdp:letter "g" ;
+    pdp:position 7 ;
+    pdp:ringkasan "hak Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 21 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_21_2 ;
+    pdp:pasalNumber 21 ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data atas perubahan informasi sebelum perubahan berlaku."@id ;
+    pdp:verified false .
+
+d:Pasal_22 a pdp:Pasal ;
+    rdfs:label "Pasal 22"@id ;
+    dcterms:identifier "Pasal 22" ;
+    pdp:hasPart d:Pasal_22_ayat_1,
+        d:Pasal_22_ayat_4,
+        d:Pasal_22_ayat_5 .
+
+d:Pasal_23 a pdp:Pasal ;
+    rdfs:label "Pasal 23"@id ;
+    dcterms:identifier "Pasal 23" ;
+    pdp:pasalNumber 23 ;
+    pdp:ringkasan "Klausul perjanjian yang meminta pemrosesan tanpa persetujuan eksplisit yang sah dinyatakan batal demi hukum."@id ;
+    pdp:verified false .
+
+d:Pasal_24 a pdp:Pasal ;
+    rdfs:label "Pasal 24"@id ;
+    dcterms:identifier "Pasal 24" ;
+    pdp:imposesObligation d:Norm_24_0 ;
+    pdp:pasalNumber 24 ;
+    pdp:ringkasan "Pengendali wajib menunjukkan bukti persetujuan yang telah diberikan Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_25 a pdp:Pasal ;
+    rdfs:label "Pasal 25"@id ;
+    dcterms:identifier "Pasal 25" ;
+    pdp:hasPart d:Pasal_25_ayat_1,
+        d:Pasal_25_ayat_2 .
+
+d:Pasal_25_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 25 ayat (1)"@id ;
+    pdp:concernsData d:DataAnak ;
+    pdp:imposesObligation d:Norm_25_1 ;
+    pdp:pasalNumber 25 ;
+    pdp:ringkasan "Pemrosesan data anak diselenggarakan secara khusus."@id ;
+    pdp:verified false .
+
+d:Pasal_25_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 25 ayat (2)"@id ;
+    pdp:concernsData d:DataAnak ;
+    pdp:pasalNumber 25 ;
+    pdp:ringkasan "Persetujuan pemrosesan data anak diberikan orang tua dan/atau wali anak."@id ;
+    pdp:verified false .
+
+d:Pasal_26 a pdp:Pasal ;
+    rdfs:label "Pasal 26"@id ;
+    dcterms:identifier "Pasal 26" ;
+    pdp:hasPart d:Pasal_26_ayat_1 .
+
+d:Pasal_26_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 26 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_26_1 ;
+    pdp:pasalNumber 26 ;
+    pdp:ringkasan "Pemrosesan data penyandang disabilitas diselenggarakan secara khusus."@id ;
+    pdp:verified false .
+
+d:Pasal_27 a pdp:Pasal ;
+    rdfs:label "Pasal 27"@id ;
+    dcterms:identifier "Pasal 27" ;
+    pdp:imposesObligation d:Norm_27_0 ;
+    pdp:pasalNumber 27 ;
+    pdp:ringkasan "Pengendali wajib melakukan pemrosesan secara terbatas dan spesifik, sah secara hukum, dan transparan."@id ;
+    pdp:verified false .
+
+d:Pasal_28 a pdp:Pasal ;
+    rdfs:label "Pasal 28"@id ;
+    dcterms:identifier "Pasal 28" ;
+    pdp:imposesObligation d:Norm_28_0 ;
+    pdp:pasalNumber 28 ;
+    pdp:ringkasan "Pengendali wajib melakukan pemrosesan sesuai tujuan pemrosesan."@id ;
+    pdp:verified false .
+
+d:Pasal_3 a pdp:Pasal ;
+    rdfs:label "Pasal 3"@id ;
+    dcterms:identifier "Pasal 3" ;
+    pdp:hasPart d:Pasal_3_huruf_a,
+        d:Pasal_3_huruf_b,
+        d:Pasal_3_huruf_c,
+        d:Pasal_3_huruf_d,
+        d:Pasal_3_huruf_e,
+        d:Pasal_3_huruf_f,
+        d:Pasal_3_huruf_g,
+        d:Pasal_3_huruf_h ;
+    pdp:pasalNumber 3 ;
+    pdp:ringkasan "Asas: pelindungan, kepastian hukum, kepentingan umum, kemanfaatan, kehati-hatian, keseimbangan, pertanggungjawaban, kerahasiaan."@id ;
+    pdp:verified false .
+
+d:Pasal_30_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 30 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_30_1 ;
+    pdp:pasalNumber 30 ;
+    pdp:ringkasan "Pengendali wajib memperbarui dan/atau memperbaiki kesalahan data paling lambat 3x24 jam sejak menerima permintaan."@id ;
+    pdp:verified false .
+
+d:Pasal_30_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 30 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_30_2 ;
+    pdp:pasalNumber 30 ;
+    pdp:ringkasan "Pengendali wajib memberitahukan hasil pembaruan atau perbaikan kepada Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_32_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 32 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_32_1 ;
+    pdp:pasalNumber 32 ;
+    pdp:ringkasan "Pengendali wajib memberikan akses kepada Subjek Data atas data yang diproses beserta rekam jejak pemrosesannya."@id ;
+    pdp:verified false .
+
+d:Pasal_32_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 32 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_32_2 ;
+    pdp:pasalNumber 32 ;
+    pdp:ringkasan "Akses diberikan paling lambat 3x24 jam sejak permintaan diterima."@id ;
+    pdp:verified false .
+
+d:Pasal_33_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 33 huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "membahayakan keamanan atau kesehatan fisik atau mental Subjek Data atau orang lain"@id ;
+    pdp:verified false .
+
+d:Pasal_33_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 33 huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "berdampak pada pengungkapan data milik orang lain"@id ;
+    pdp:verified false .
+
+d:Pasal_33_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 33 huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "bertentangan dengan kepentingan pertahanan dan keamanan nasional"@id ;
+    pdp:verified false .
+
+d:Pasal_34 a pdp:Pasal ;
+    rdfs:label "Pasal 34"@id ;
+    dcterms:identifier "Pasal 34" ;
+    pdp:hasPart d:Pasal_34_ayat_1,
+        d:Pasal_34_ayat_2 .
+
+d:Pasal_34_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 34 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_34_1 ;
+    pdp:pasalNumber 34 ;
+    pdp:ringkasan "Pengendali wajib melakukan penilaian dampak pelindungan data pribadi untuk pemrosesan berisiko tinggi."@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 34 ayat (2)"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:hasPart d:Pasal_34_ayat_2_huruf_a,
+        d:Pasal_34_ayat_2_huruf_b,
+        d:Pasal_34_ayat_2_huruf_c,
+        d:Pasal_34_ayat_2_huruf_d,
+        d:Pasal_34_ayat_2_huruf_e,
+        d:Pasal_34_ayat_2_huruf_f,
+        d:Pasal_34_ayat_2_huruf_g ;
+    pdp:pasalNumber 34 ;
+    pdp:ringkasan "Pemrosesan berisiko tinggi meliputi keputusan otomatis berdampak hukum, data spesifik, skala besar, evaluasi atau pemantauan sistematis, penggabungan data, teknologi baru, dan pemrosesan yang membatasi hak."@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "pengambilan keputusan secara otomatis yang memiliki akibat hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "pemrosesan atas data spesifik"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "pemrosesan data dalam skala besar"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "pemrosesan untuk evaluasi, penskoran, atau pemantauan sistematis"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "pemrosesan untuk kegiatan pencocokan atau penggabungan data"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf f"@id ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "penggunaan teknologi baru"@id ;
+    pdp:verified false .
+
+d:Pasal_34_ayat_2_huruf_g a pdp:Huruf ;
+    rdfs:label "Pasal 34 ayat (2) huruf g"@id ;
+    pdp:letter "g" ;
+    pdp:position 7 ;
+    pdp:ringkasan "pemrosesan yang membatasi pelaksanaan hak Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_39 a pdp:Pasal ;
+    rdfs:label "Pasal 39"@id ;
+    dcterms:identifier "Pasal 39" ;
+    pdp:hasPart d:Pasal_39_ayat_1,
+        d:Pasal_39_ayat_2 .
+
+d:Pasal_39_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 39 ayat (2)"@id ;
+    pdp:pasalNumber 39 ;
+    pdp:ringkasan "Pencegahan dilakukan dengan sistem keamanan yang andal, aman, dan bertanggung jawab untuk pemrosesan elektronik."@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "pelindungan"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "kepastian hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "kepentingan umum"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "kemanfaatan"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "kehati-hatian"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf f"@id ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "keseimbangan"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_g a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf g"@id ;
+    pdp:letter "g" ;
+    pdp:position 7 ;
+    pdp:ringkasan "pertanggungjawaban"@id ;
+    pdp:verified false .
+
+d:Pasal_3_huruf_h a pdp:Huruf ;
+    rdfs:label "Pasal 3 huruf h"@id ;
+    pdp:letter "h" ;
+    pdp:position 8 ;
+    pdp:ringkasan "kerahasiaan"@id ;
+    pdp:verified false .
+
+d:Pasal_4 a pdp:Pasal ;
+    rdfs:label "Pasal 4"@id ;
+    dcterms:identifier "Pasal 4" ;
+    pdp:hasPart d:Pasal_4_ayat_1,
+        d:Pasal_4_ayat_2,
+        d:Pasal_4_ayat_3 .
+
+d:Pasal_40 a pdp:Pasal ;
+    rdfs:label "Pasal 40"@id ;
+    dcterms:identifier "Pasal 40" ;
+    pdp:hasPart d:Pasal_40_ayat_1,
+        d:Pasal_40_ayat_2 .
+
+d:Pasal_40_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 40 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_40_1 ;
+    pdp:pasalNumber 40 ;
+    pdp:ringkasan "Pengendali wajib menghentikan pemrosesan jika Subjek Data menarik persetujuan."@id ;
+    pdp:verified false .
+
+d:Pasal_40_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 40 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_40_2 ;
+    pdp:pasalNumber 40 ;
+    pdp:ringkasan "Penghentian dilakukan paling lambat 3x24 jam sejak permintaan penarikan persetujuan diterima."@id ;
+    pdp:verified false .
+
+d:Pasal_41 a pdp:Pasal ;
+    rdfs:label "Pasal 41"@id ;
+    dcterms:identifier "Pasal 41" ;
+    pdp:hasPart d:Pasal_41_ayat_1,
+        d:Pasal_41_ayat_2,
+        d:Pasal_41_ayat_3 .
+
+d:Pasal_41_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 41 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_41_1 ;
+    pdp:pasalNumber 41 ;
+    pdp:ringkasan "Pengendali wajib melakukan penundaan dan pembatasan pemrosesan, sebagian atau seluruhnya, paling lambat 3x24 jam sejak permintaan."@id ;
+    pdp:verified false .
+
+d:Pasal_41_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 41 ayat (2) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "ditentukan oleh undang-undang"@id ;
+    pdp:verified false .
+
+d:Pasal_41_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 41 ayat (2) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "dapat membahayakan keselamatan pihak lain"@id ;
+    pdp:verified false .
+
+d:Pasal_41_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 41 ayat (2) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "Subjek Data terikat perjanjian tertulis yang tidak mengizinkan"@id ;
+    pdp:verified false .
+
+d:Pasal_41_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 41 ayat (3)"@id ;
+    pdp:imposesObligation d:Norm_41_3 ;
+    pdp:pasalNumber 41 ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data setelah penundaan atau pembatasan berlaku."@id ;
+    pdp:verified false .
+
+d:Pasal_42 a pdp:Pasal ;
+    rdfs:label "Pasal 42"@id ;
+    dcterms:identifier "Pasal 42" ;
+    pdp:hasPart d:Pasal_42_ayat_1 .
+
+d:Pasal_42_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 42 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "telah mencapai masa retensi"@id ;
+    pdp:verified false .
+
+d:Pasal_42_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 42 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "tujuan pemrosesan telah tercapai"@id ;
+    pdp:verified false .
+
+d:Pasal_42_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 42 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "terdapat permintaan dari Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_43 a pdp:Pasal ;
+    rdfs:label "Pasal 43"@id ;
+    dcterms:identifier "Pasal 43" ;
+    pdp:hasPart d:Pasal_43_ayat_1 .
+
+d:Pasal_43_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 43 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "data tidak lagi diperlukan untuk pencapaian tujuan"@id ;
+    pdp:verified false .
+
+d:Pasal_43_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 43 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "Subjek Data telah menarik persetujuan"@id ;
+    pdp:verified false .
+
+d:Pasal_43_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 43 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "ada permintaan dari Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_43_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 43 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "data diperoleh dan diproses dengan cara melawan hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_44 a pdp:Pasal ;
+    rdfs:label "Pasal 44"@id ;
+    dcterms:identifier "Pasal 44" ;
+    pdp:hasPart d:Pasal_44_ayat_1 .
+
+d:Pasal_44_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 44 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "masa retensi berakhir dan jadwal retensi arsip menyatakan dimusnahkan"@id ;
+    pdp:verified false .
+
+d:Pasal_44_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 44 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "ada permintaan dari Subjek Data"@id ;
+    pdp:verified false .
+
+d:Pasal_44_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 44 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "tidak berkaitan dengan proses penyelesaian perkara"@id ;
+    pdp:verified false .
+
+d:Pasal_44_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 44 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "data diperoleh dan diproses dengan cara melawan hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_46 a pdp:Pasal ;
+    rdfs:label "Pasal 46"@id ;
+    dcterms:identifier "Pasal 46" ;
+    pdp:hasPart d:Pasal_46_ayat_1,
+        d:Pasal_46_ayat_2,
+        d:Pasal_46_ayat_3 .
+
+d:Pasal_46_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 46 ayat (2)"@id ;
+    pdp:hasPart d:Pasal_46_ayat_2_huruf_a,
+        d:Pasal_46_ayat_2_huruf_b,
+        d:Pasal_46_ayat_2_huruf_c ;
+    pdp:pasalNumber 46 ;
+    pdp:ringkasan "Pemberitahuan memuat data yang terungkap, kapan dan bagaimana terungkap, serta upaya penanganan dan pemulihan."@id ;
+    pdp:verified false .
+
+d:Pasal_46_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 46 ayat (2) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "Data Pribadi yang terungkap"@id ;
+    pdp:verified false .
+
+d:Pasal_46_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 46 ayat (2) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "kapan dan bagaimana Data Pribadi terungkap"@id ;
+    pdp:verified false .
+
+d:Pasal_46_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 46 ayat (2) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "upaya penanganan dan pemulihan atas terungkapnya Data Pribadi"@id ;
+    pdp:verified false .
+
+d:Pasal_46_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 46 ayat (3)"@id ;
+    pdp:imposesObligation d:Norm_46_3 ;
+    pdp:pasalNumber 46 ;
+    pdp:ringkasan "Dalam hal tertentu, Pengendali wajib memberitahukan kepada masyarakat mengenai kegagalan pelindungan data pribadi."@id ;
+    pdp:verified false .
+
+d:Pasal_47 a pdp:Pasal ;
+    rdfs:label "Pasal 47"@id ;
+    dcterms:identifier "Pasal 47" ;
+    pdp:imposesObligation d:Norm_47_0 ;
+    pdp:pasalNumber 47 ;
+    pdp:ringkasan "Pengendali wajib bertanggung jawab atas pemrosesan dan menunjukkan pertanggungjawabannya dalam memenuhi prinsip pelindungan data pribadi."@id ;
+    pdp:verified false .
+
+d:Pasal_48 a pdp:Pasal ;
+    rdfs:label "Pasal 48"@id ;
+    dcterms:identifier "Pasal 48" ;
+    pdp:hasPart d:Pasal_48_ayat_1 .
+
+d:Pasal_48_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 48 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_48_1 ;
+    pdp:pasalNumber 48 ;
+    pdp:ringkasan "Pengendali berbentuk badan hukum yang melakukan penggabungan, pemisahan, pengambilalihan, peleburan, atau pembubaran wajib menyampaikan pemberitahuan pengalihan data kepada Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_49 a pdp:Pasal ;
+    rdfs:label "Pasal 49"@id ;
+    dcterms:identifier "Pasal 49" ;
+    pdp:imposesObligation d:Norm_49_0 ;
+    pdp:pasalNumber 49 ;
+    pdp:ringkasan "Pengendali dan/atau Prosesor wajib mematuhi perintah lembaga dalam rangka penyelenggaraan undang-undang ini."@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 4 ayat (1)"@id ;
+    pdp:pasalNumber 4 ;
+    pdp:ringkasan "Data Pribadi terdiri atas Data Pribadi yang bersifat spesifik dan yang bersifat umum."@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 4 ayat (2)"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:hasPart d:Pasal_4_ayat_2_huruf_a,
+        d:Pasal_4_ayat_2_huruf_b,
+        d:Pasal_4_ayat_2_huruf_c,
+        d:Pasal_4_ayat_2_huruf_d,
+        d:Pasal_4_ayat_2_huruf_e,
+        d:Pasal_4_ayat_2_huruf_f,
+        d:Pasal_4_ayat_2_huruf_g ;
+    pdp:pasalNumber 4 ;
+    pdp:ringkasan "Data Pribadi spesifik meliputi data kesehatan, biometrik, genetika, catatan kejahatan, data anak, data keuangan pribadi, dan data lain sesuai peraturan."@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf a"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "data dan informasi kesehatan"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf b"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "data biometrik"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf c"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "data genetika"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf d"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "catatan kejahatan"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf e"@id ;
+    pdp:concernsData d:DataAnak ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "data anak"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf f"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "data keuangan pribadi"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_2_huruf_g a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (2) huruf g"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:letter "g" ;
+    pdp:position 7 ;
+    pdp:ringkasan "data lain sesuai ketentuan peraturan perundang-undangan"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 4 ayat (3)"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:hasPart d:Pasal_4_ayat_3_huruf_a,
+        d:Pasal_4_ayat_3_huruf_b,
+        d:Pasal_4_ayat_3_huruf_c,
+        d:Pasal_4_ayat_3_huruf_d,
+        d:Pasal_4_ayat_3_huruf_e,
+        d:Pasal_4_ayat_3_huruf_f ;
+    pdp:pasalNumber 4 ;
+    pdp:ringkasan "Data Pribadi umum meliputi nama lengkap, jenis kelamin, kewarganegaraan, agama, status perkawinan, dan/atau data yang dikombinasikan untuk mengidentifikasi seseorang."@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf a"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "nama lengkap"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf b"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "jenis kelamin"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf c"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "kewarganegaraan"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf d"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "agama"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf e"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "status perkawinan"@id ;
+    pdp:verified false .
+
+d:Pasal_4_ayat_3_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 4 ayat (3) huruf f"@id ;
+    pdp:concernsData d:DataPribadiUmum ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "data pribadi yang dikombinasikan untuk mengidentifikasi seseorang"@id ;
+    pdp:verified false .
+
+d:Pasal_5 a pdp:Pasal ;
+    rdfs:label "Pasal 5"@id ;
+    dcterms:identifier "Pasal 5" ;
+    pdp:grantsRight d:Norm_5_0 ;
+    pdp:pasalNumber 5 ;
+    pdp:ringkasan "Hak mendapatkan informasi tentang kejelasan identitas, dasar kepentingan hukum, tujuan permintaan dan penggunaan data, serta akuntabilitas pihak yang meminta."@id ;
+    pdp:verified false .
+
+d:Pasal_50 a pdp:Pasal ;
+    rdfs:label "Pasal 50"@id ;
+    dcterms:identifier "Pasal 50" ;
+    pdp:hasPart d:Pasal_50_ayat_1 .
+
+d:Pasal_50_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 50 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "kepentingan pertahanan dan keamanan nasional"@id ;
+    pdp:verified false .
+
+d:Pasal_50_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 50 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "kepentingan proses penegakan hukum"@id ;
+    pdp:verified false .
+
+d:Pasal_50_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 50 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "kepentingan umum dalam rangka penyelenggaraan negara"@id ;
+    pdp:verified false .
+
+d:Pasal_50_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 50 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "kepentingan pengawasan sektor jasa keuangan, moneter, sistem pembayaran, dan stabilitas sistem keuangan"@id ;
+    pdp:verified false .
+
+d:Pasal_51 a pdp:Pasal ;
+    rdfs:label "Pasal 51"@id ;
+    dcterms:identifier "Pasal 51" ;
+    pdp:hasPart d:Pasal_51_ayat_1,
+        d:Pasal_51_ayat_5,
+        d:Pasal_51_ayat_6 .
+
+d:Pasal_51_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 51 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_51_1 ;
+    pdp:pasalNumber 51 ;
+    pdp:ringkasan "Prosesor wajib melakukan pemrosesan berdasarkan perintah Pengendali."@id ;
+    pdp:verified false .
+
+d:Pasal_51_ayat_5 a pdp:Ayat ;
+    rdfs:label "Pasal 51 ayat (5)"@id ;
+    pdp:imposesObligation d:Norm_51_5 ;
+    pdp:pasalNumber 51 ;
+    pdp:ringkasan "Prosesor wajib memperoleh persetujuan tertulis Pengendali sebelum melibatkan Prosesor lain."@id ;
+    pdp:verified false .
+
+d:Pasal_51_ayat_6 a pdp:Ayat ;
+    rdfs:label "Pasal 51 ayat (6)"@id ;
+    pdp:pasalNumber 51 ;
+    pdp:ringkasan "Jika Prosesor memproses di luar perintah atau tujuan Pengendali, pemrosesan menjadi tanggung jawab Prosesor."@id ;
+    pdp:verified false .
+
+d:Pasal_53 a pdp:Pasal ;
+    rdfs:label "Pasal 53"@id ;
+    dcterms:identifier "Pasal 53" ;
+    pdp:hasPart d:Pasal_53_ayat_1 .
+
+d:Pasal_53_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 53 ayat (1)"@id ;
+    pdp:concernsData d:DataPribadiSpesifik ;
+    pdp:hasPart d:Pasal_53_ayat_1_huruf_a,
+        d:Pasal_53_ayat_1_huruf_b,
+        d:Pasal_53_ayat_1_huruf_c ;
+    pdp:imposesObligation d:Norm_53_1 ;
+    pdp:pasalNumber 53 ;
+    pdp:ringkasan "Pengendali dan Prosesor wajib menunjuk pejabat pelindungan data pribadi jika untuk pelayanan publik, kegiatan inti berupa pemantauan sistematis skala besar, atau kegiatan inti pemrosesan data spesifik dan/atau tindak pidana skala besar."@id ;
+    pdp:verified false .
+
+d:Pasal_53_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 53 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "pemrosesan data untuk kepentingan pelayanan publik"@id ;
+    pdp:verified false .
+
+d:Pasal_53_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 53 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "kegiatan inti berupa pemantauan secara teratur dan sistematis dalam skala besar"@id ;
+    pdp:verified false .
+
+d:Pasal_53_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 53 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "kegiatan inti berupa pemrosesan data spesifik dan/atau data terkait tindak pidana dalam skala besar"@id ;
+    pdp:verified false .
+
+d:Pasal_54 a pdp:Pasal ;
+    rdfs:label "Pasal 54"@id ;
+    dcterms:identifier "Pasal 54" ;
+    pdp:hasPart d:Pasal_54_ayat_1 .
+
+d:Pasal_54_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 54 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_54_ayat_1_huruf_a,
+        d:Pasal_54_ayat_1_huruf_b,
+        d:Pasal_54_ayat_1_huruf_c,
+        d:Pasal_54_ayat_1_huruf_d ;
+    pdp:imposesObligation d:Norm_54_1 ;
+    pdp:pasalNumber 54 ;
+    pdp:ringkasan "Pejabat pelindungan data pribadi paling sedikit menginformasikan dan memberi saran kepatuhan, memantau kepatuhan, memberi saran penilaian dampak, serta berkoordinasi dan menjadi narahubung."@id ;
+    pdp:verified false .
+
+d:Pasal_54_ayat_1_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 54 ayat (1) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "menginformasikan dan memberikan saran kepatuhan"@id ;
+    pdp:verified false .
+
+d:Pasal_54_ayat_1_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 54 ayat (1) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "memantau dan memastikan kepatuhan"@id ;
+    pdp:verified false .
+
+d:Pasal_54_ayat_1_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 54 ayat (1) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "memberikan saran penilaian dampak dan memantau kinerja"@id ;
+    pdp:verified false .
+
+d:Pasal_54_ayat_1_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 54 ayat (1) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "berkoordinasi dan menjadi narahubung"@id ;
+    pdp:verified false .
+
+d:Pasal_55 a pdp:Pasal ;
+    rdfs:label "Pasal 55"@id ;
+    dcterms:identifier "Pasal 55" ;
+    pdp:hasPart d:Pasal_55_ayat_2 .
+
+d:Pasal_55_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 55 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_55_2 ;
+    pdp:pasalNumber 55 ;
+    pdp:ringkasan "Pengendali pengirim dan penerima di wilayah Indonesia wajib melakukan pelindungan data sesuai undang-undang ini."@id ;
+    pdp:verified false .
+
+d:Pasal_56 a pdp:Pasal ;
+    rdfs:label "Pasal 56"@id ;
+    dcterms:identifier "Pasal 56" ;
+    pdp:hasPart d:Pasal_56_ayat_2,
+        d:Pasal_56_ayat_3,
+        d:Pasal_56_ayat_4 .
+
+d:Pasal_57 a pdp:Pasal ;
+    rdfs:label "Pasal 57"@id ;
+    dcterms:identifier "Pasal 57" ;
+    pdp:hasPart d:Pasal_57_ayat_1,
+        d:Pasal_57_ayat_2,
+        d:Pasal_57_ayat_3,
+        d:Pasal_57_ayat_4 .
+
+d:Pasal_57_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 57 ayat (2)"@id ;
+    pdp:establishesNorm d:Norm_57_2 ;
+    pdp:hasPart d:Pasal_57_ayat_2_huruf_a,
+        d:Pasal_57_ayat_2_huruf_b,
+        d:Pasal_57_ayat_2_huruf_c,
+        d:Pasal_57_ayat_2_huruf_d ;
+    pdp:pasalNumber 57 ;
+    pdp:ringkasan "Sanksi administratif berupa peringatan tertulis, penghentian sementara kegiatan pemrosesan, penghapusan atau pemusnahan data, dan/atau denda administratif."@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_2_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 57 ayat (2) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "peringatan tertulis"@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_2_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 57 ayat (2) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "penghentian sementara kegiatan pemrosesan"@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_2_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 57 ayat (2) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "penghapusan atau pemusnahan data"@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_2_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 57 ayat (2) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "denda administratif"@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 57 ayat (3)"@id ;
+    pdp:establishesNorm d:Norm_57_3 ;
+    pdp:pasalNumber 57 ;
+    pdp:ringkasan "Denda administratif paling tinggi 2 persen dari pendapatan atau penerimaan tahunan terhadap variabel pelanggaran."@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_4 a pdp:Ayat ;
+    rdfs:label "Pasal 57 ayat (4)"@id ;
+    pdp:pasalNumber 57 ;
+    pdp:ringkasan "Sanksi administratif diberikan oleh lembaga."@id ;
+    pdp:verified false .
+
+d:Pasal_59 a pdp:Pasal ;
+    rdfs:label "Pasal 59"@id ;
+    dcterms:identifier "Pasal 59" ;
+    pdp:pasalNumber 59 ;
+    pdp:ringkasan "Tugas lembaga: merumuskan kebijakan, mengawasi, menegakkan hukum administratif, dan memfasilitasi penyelesaian sengketa di luar pengadilan."@id ;
+    pdp:verified false .
+
+d:Pasal_6 a pdp:Pasal ;
+    rdfs:label "Pasal 6"@id ;
+    dcterms:identifier "Pasal 6" ;
+    pdp:grantsRight d:Norm_6_0 ;
+    pdp:pasalNumber 6 ;
+    pdp:ringkasan "Hak melengkapi, memperbarui, dan/atau memperbaiki kesalahan data tentang dirinya sesuai tujuan pemrosesan."@id ;
+    pdp:verified false .
+
+d:Pasal_60 a pdp:Pasal ;
+    rdfs:label "Pasal 60"@id ;
+    dcterms:identifier "Pasal 60" ;
+    pdp:pasalNumber 60 ;
+    pdp:ringkasan "Kewenangan lembaga antara lain menetapkan kebijakan, mengawasi, menjatuhkan sanksi administratif, menerima aduan, memanggil pihak, dan memeriksa sistem elektronik."@id ;
+    pdp:verified false .
+
+d:Pasal_61 a pdp:Pasal ;
+    rdfs:label "Pasal 61"@id ;
+    dcterms:identifier "Pasal 61" ;
+    pdp:pasalNumber 61 ;
+    pdp:ringkasan "Tata cara pelaksanaan kewenangan lembaga diatur dengan Peraturan Pemerintah."@id ;
+    pdp:verified false .
+
+d:Pasal_62 a pdp:Pasal ;
+    rdfs:label "Pasal 62"@id ;
+    dcterms:identifier "Pasal 62" ;
+    pdp:pasalNumber 62 ;
+    pdp:ringkasan "Pemerintah melakukan kerja sama internasional sesuai peraturan perundang-undangan dan prinsip hukum internasional."@id ;
+    pdp:verified false .
+
+d:Pasal_63 a pdp:Pasal ;
+    rdfs:label "Pasal 63"@id ;
+    dcterms:identifier "Pasal 63" ;
+    pdp:pasalNumber 63 ;
+    pdp:ringkasan "Masyarakat dapat berperan langsung atau tidak langsung melalui pendidikan, pelatihan, advokasi, sosialisasi, dan/atau pengawasan."@id ;
+    pdp:verified false .
+
+d:Pasal_64 a pdp:Pasal ;
+    rdfs:label "Pasal 64"@id ;
+    dcterms:identifier "Pasal 64" ;
+    pdp:pasalNumber 64 ;
+    pdp:ringkasan "Sengketa diselesaikan melalui arbitrase, pengadilan, atau lembaga alternatif; alat bukti mencakup informasi dan dokumen elektronik; sidang dapat tertutup."@id ;
+    pdp:verified false .
+
+d:Pasal_65 a pdp:Pasal ;
+    rdfs:label "Pasal 65"@id ;
+    dcterms:identifier "Pasal 65" ;
+    pdp:hasPart d:Pasal_65_ayat_1,
+        d:Pasal_65_ayat_2,
+        d:Pasal_65_ayat_3 .
+
+d:Pasal_67 a pdp:Pasal ;
+    rdfs:label "Pasal 67"@id ;
+    dcterms:identifier "Pasal 67" ;
+    pdp:hasPart d:Pasal_67_ayat_1,
+        d:Pasal_67_ayat_2,
+        d:Pasal_67_ayat_3 .
+
+d:Pasal_7 a pdp:Pasal ;
+    rdfs:label "Pasal 7"@id ;
+    dcterms:identifier "Pasal 7" ;
+    pdp:grantsRight d:Norm_7_0 ;
+    pdp:pasalNumber 7 ;
+    pdp:ringkasan "Hak mendapatkan akses dan memperoleh salinan data tentang dirinya."@id ;
+    pdp:verified false .
+
+d:Pasal_70 a pdp:Pasal ;
+    rdfs:label "Pasal 70"@id ;
+    dcterms:identifier "Pasal 70" ;
+    pdp:hasPart d:Pasal_70_ayat_1,
+        d:Pasal_70_ayat_2,
+        d:Pasal_70_ayat_3,
+        d:Pasal_70_ayat_4 .
+
+d:Pasal_70_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 70 ayat (2)"@id ;
+    pdp:establishesNorm d:Norm_70_2 ;
+    pdp:pasalNumber 70 ;
+    pdp:ringkasan "Korporasi hanya dapat dijatuhi pidana denda."@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 70 ayat (3)"@id ;
+    pdp:establishesNorm d:Norm_70_3 ;
+    pdp:pasalNumber 70 ;
+    pdp:ringkasan "Pidana denda yang dijatuhkan kepada korporasi paling banyak 10 kali dari maksimum pidana denda yang diancamkan."@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4 a pdp:Ayat ;
+    rdfs:label "Pasal 70 ayat (4)"@id ;
+    pdp:establishesNorm d:Norm_70_4 ;
+    pdp:hasPart d:Pasal_70_ayat_4_huruf_a,
+        d:Pasal_70_ayat_4_huruf_b,
+        d:Pasal_70_ayat_4_huruf_c,
+        d:Pasal_70_ayat_4_huruf_d,
+        d:Pasal_70_ayat_4_huruf_e,
+        d:Pasal_70_ayat_4_huruf_f,
+        d:Pasal_70_ayat_4_huruf_g,
+        d:Pasal_70_ayat_4_huruf_h ;
+    pdp:pasalNumber 70 ;
+    pdp:ringkasan "Korporasi dapat dijatuhi pidana tambahan berupa perampasan keuntungan, pembekuan usaha, pelarangan permanen, penutupan tempat usaha, pelaksanaan kewajiban yang dilalaikan, ganti kerugian, pencabutan izin, dan/atau pembubaran."@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_a a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf a"@id ;
+    pdp:letter "a" ;
+    pdp:position 1 ;
+    pdp:ringkasan "perampasan keuntungan atau harta kekayaan hasil tindak pidana"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_b a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf b"@id ;
+    pdp:letter "b" ;
+    pdp:position 2 ;
+    pdp:ringkasan "pembekuan seluruh atau sebagian usaha korporasi"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_c a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf c"@id ;
+    pdp:letter "c" ;
+    pdp:position 3 ;
+    pdp:ringkasan "pelarangan tetap melakukan perbuatan tertentu"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_d a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf d"@id ;
+    pdp:letter "d" ;
+    pdp:position 4 ;
+    pdp:ringkasan "penutupan seluruh atau sebagian tempat usaha"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_e a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf e"@id ;
+    pdp:letter "e" ;
+    pdp:position 5 ;
+    pdp:ringkasan "pelaksanaan kewajiban yang telah dilalaikan"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_f a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf f"@id ;
+    pdp:letter "f" ;
+    pdp:position 6 ;
+    pdp:ringkasan "pembayaran ganti kerugian"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_g a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf g"@id ;
+    pdp:letter "g" ;
+    pdp:position 7 ;
+    pdp:ringkasan "pencabutan izin"@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_4_huruf_h a pdp:Huruf ;
+    rdfs:label "Pasal 70 ayat (4) huruf h"@id ;
+    pdp:letter "h" ;
+    pdp:position 8 ;
+    pdp:ringkasan "pembubaran korporasi"@id ;
+    pdp:verified false .
+
+d:Pasal_74 a pdp:Pasal ;
+    rdfs:label "Pasal 74"@id ;
+    dcterms:identifier "Pasal 74" ;
+    pdp:imposesObligation d:Norm_74_0 ;
+    pdp:pasalNumber 74 ;
+    pdp:ringkasan "Pengendali, Prosesor, dan pihak terkait wajib menyesuaikan dengan ketentuan pemrosesan paling lama 2 tahun sejak undang-undang diundangkan."@id ;
+    pdp:verified false .
+
+d:Pasal_75 a pdp:Pasal ;
+    rdfs:label "Pasal 75"@id ;
+    dcterms:identifier "Pasal 75" ;
+    pdp:pasalNumber 75 ;
+    pdp:ringkasan "Peraturan yang sudah ada tentang pelindungan data pribadi tetap berlaku sepanjang tidak bertentangan dengan undang-undang ini."@id ;
+    pdp:verified false .
+
+d:Pasal_76 a pdp:Pasal ;
+    rdfs:label "Pasal 76"@id ;
+    dcterms:identifier "Pasal 76" ;
+    pdp:pasalNumber 76 ;
+    pdp:ringkasan "Undang-undang berlaku pada tanggal diundangkan, 17 Oktober 2022 (LN 2022 No. 196)."@id ;
+    pdp:verified false .
+
+d:PejabatPelindungDataPribadi a pdp:Actor ;
+    rdfs:label "Pejabat atau Petugas Pelindungan Data Pribadi"@id .
+
+pdp:LegalDocument a owl:Class .
+
+pdp:hasException a owl:ObjectProperty .
+
+pdp:hasPart a owl:ObjectProperty,
+        owl:TransitiveProperty .
+
+pdp:refersTo a owl:ObjectProperty,
+        owl:TransitiveProperty .
+
+d:LembagaPengawas a pdp:Actor ;
+    rdfs:label "Lembaga Pengawas"@id .
+
+d:Norm_10_1 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 10 ayat (1)"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:hasException d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak mengajukan keberatan atas keputusan yang hanya didasarkan pada pemrosesan otomatis, termasuk pemrofilan, yang menimbulkan akibat hukum atau dampak signifikan."@id .
+
+d:Norm_11_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 11"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:hasException d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak menunda atau membatasi pemrosesan data secara proporsional sesuai tujuan pemrosesan."@id .
+
+d:Norm_13_1 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 13 ayat (1)"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:hasException d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak memperoleh dan/atau menggunakan data tentang dirinya dalam bentuk yang sesuai struktur dan format lazim, serta mengirimkannya ke Pengendali lain (portabilitas)."@id .
+
+d:Norm_36_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 36"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib menjaga kerahasiaan data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_41_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 41 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasDeadline d:Deadline_3x24_jam ;
+    pdp:hasException d:Pasal_41_ayat_2 ;
+    pdp:ringkasan "Pengendali wajib melakukan penundaan dan pembatasan pemrosesan, sebagian atau seluruhnya, paling lambat 3x24 jam sejak permintaan."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_42_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 42 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib mengakhiri pemrosesan jika masa retensi berakhir, tujuan tercapai, atau ada permintaan Subjek Data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_43_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 43 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib menghapus data jika tidak lagi diperlukan, persetujuan ditarik, ada permintaan Subjek Data, atau data diperoleh dan diproses secara melawan hukum."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_44_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 44 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memusnahkan data jika masa retensi berakhir dan jadwal retensi arsip menentukan musnah, ada permintaan Subjek Data, tidak berkaitan perkara hukum, atau diperoleh secara melawan hukum."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_45_0 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 45"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data atas penghapusan dan/atau pemusnahan data."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_46_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 46 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasDeadline d:Deadline_3x24_jam ;
+    pdp:hasException d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Dalam hal terjadi kegagalan pelindungan data pribadi, Pengendali wajib menyampaikan pemberitahuan tertulis paling lambat 3x24 jam kepada Subjek Data dan lembaga."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_67_1 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 67 ayat (1)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:maxFineRupiah 5000000000 ;
+    pdp:maxPrisonYears 5 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (1) dipidana penjara paling lama 5 tahun dan/atau denda paling banyak Rp5.000.000.000."@id ;
+    pdp:sanksiTipe "Pidana" .
+
+d:Norm_67_2 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 67 ayat (2)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:maxFineRupiah 4000000000 ;
+    pdp:maxPrisonYears 4 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (2) dipidana penjara paling lama 4 tahun dan/atau denda paling banyak Rp4.000.000.000."@id ;
+    pdp:sanksiTipe "Pidana" .
+
+d:Norm_67_3 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 67 ayat (3)"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:maxFineRupiah 5000000000 ;
+    pdp:maxPrisonYears 5 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (3) dipidana penjara paling lama 5 tahun dan/atau denda paling banyak Rp5.000.000.000."@id ;
+    pdp:sanksiTipe "Pidana" .
+
+d:Norm_68_0 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 68"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:maxFineRupiah 6000000000 ;
+    pdp:maxPrisonYears 6 ;
+    pdp:ringkasan "Pelanggaran Pasal 66 dipidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp6.000.000.000."@id ;
+    pdp:sanksiTipe "Pidana" .
+
+d:Norm_8_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 8"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:hasException d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak mengakhiri pemrosesan, menghapus, dan/atau memusnahkan data tentang dirinya."@id .
+
+d:Norm_9_0 a pdp:Hak ;
+    rdfs:label "Hak pada Pasal 9"@id ;
+    pdp:appliesTo d:SubjekDataPribadi ;
+    pdp:hasException d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak menarik kembali persetujuan pemrosesan data yang telah diberikan."@id .
+
+d:Pasal_10_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 10 ayat (1)"@id ;
+    pdp:grantsRight d:Norm_10_1 ;
+    pdp:pasalNumber 10 ;
+    pdp:referredBy d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak mengajukan keberatan atas keputusan yang hanya didasarkan pada pemrosesan otomatis, termasuk pemrofilan, yang menimbulkan akibat hukum atau dampak signifikan."@id ;
+    pdp:verified false .
+
+d:Pasal_11 a pdp:Pasal ;
+    rdfs:label "Pasal 11"@id ;
+    dcterms:identifier "Pasal 11" ;
+    pdp:grantsRight d:Norm_11_0 ;
+    pdp:pasalNumber 11 ;
+    pdp:referredBy d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak menunda atau membatasi pemrosesan data secara proporsional sesuai tujuan pemrosesan."@id ;
+    pdp:verified false .
+
+d:Pasal_13_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 13 ayat (1)"@id ;
+    pdp:grantsRight d:Norm_13_1 ;
+    pdp:pasalNumber 13 ;
+    pdp:referredBy d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak memperoleh dan/atau menggunakan data tentang dirinya dalam bentuk yang sesuai struktur dan format lazim, serta mengirimkannya ke Pengendali lain (portabilitas)."@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 20 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_20_1 ;
+    pdp:pasalNumber 20 ;
+    pdp:referredBy d:Pasal_57_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memiliki dasar pemrosesan Data Pribadi."@id ;
+    pdp:verified false .
+
+d:Pasal_20_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 20 ayat (2)"@id ;
+    pdp:hasPart d:Pasal_20_ayat_2_huruf_a,
+        d:Pasal_20_ayat_2_huruf_b,
+        d:Pasal_20_ayat_2_huruf_c,
+        d:Pasal_20_ayat_2_huruf_d,
+        d:Pasal_20_ayat_2_huruf_e,
+        d:Pasal_20_ayat_2_huruf_f ;
+    pdp:pasalNumber 20 ;
+    pdp:referredBy d:Pasal_21_ayat_1 ;
+    pdp:ringkasan "Dasar pemrosesan: persetujuan eksplisit yang sah, pemenuhan perjanjian, kewajiban hukum, pelindungan kepentingan vital, tugas kepentingan umum atau kewenangan, dan kepentingan yang sah lainnya."@id ;
+    pdp:verified false .
+
+d:Pasal_21_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 21 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_21_ayat_1_huruf_a,
+        d:Pasal_21_ayat_1_huruf_b,
+        d:Pasal_21_ayat_1_huruf_c,
+        d:Pasal_21_ayat_1_huruf_d,
+        d:Pasal_21_ayat_1_huruf_e,
+        d:Pasal_21_ayat_1_huruf_f,
+        d:Pasal_21_ayat_1_huruf_g ;
+    pdp:imposesObligation d:Norm_21_1 ;
+    pdp:pasalNumber 21 ;
+    pdp:refersTo d:Pasal_20_ayat_2 ;
+    pdp:ringkasan "Berdasarkan persetujuan, Pengendali wajib menyampaikan informasi legalitas, tujuan, jenis dan relevansi data, jangka waktu retensi dokumen, rincian data, jangka waktu pemrosesan, dan hak Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_22_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 22 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_22_1 ;
+    pdp:pasalNumber 22 ;
+    pdp:referredBy d:Pasal_22_ayat_5 ;
+    pdp:ringkasan "Persetujuan pemrosesan dilakukan melalui persetujuan tertulis atau terekam, secara elektronik atau nonelektronik."@id ;
+    pdp:verified false .
+
+d:Pasal_22_ayat_4 a pdp:Ayat ;
+    rdfs:label "Pasal 22 ayat (4)"@id ;
+    pdp:imposesObligation d:Norm_22_4 ;
+    pdp:pasalNumber 22 ;
+    pdp:referredBy d:Pasal_22_ayat_5 ;
+    pdp:ringkasan "Jika persetujuan memuat tujuan lain, permintaan harus dapat dibedakan secara jelas, dalam format yang dapat dipahami dan diakses, dengan bahasa sederhana dan jelas."@id ;
+    pdp:verified false .
+
+d:Pasal_29 a pdp:Pasal ;
+    rdfs:label "Pasal 29"@id ;
+    dcterms:identifier "Pasal 29" ;
+    pdp:imposesObligation d:Norm_29_0 ;
+    pdp:pasalNumber 29 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib memastikan akurasi, kelengkapan, dan konsistensi data dengan melakukan verifikasi."@id ;
+    pdp:verified false .
+
+d:Pasal_30 a pdp:Pasal ;
+    rdfs:label "Pasal 30"@id ;
+    dcterms:identifier "Pasal 30" ;
+    pdp:hasPart d:Pasal_30_ayat_1,
+        d:Pasal_30_ayat_2 ;
+    pdp:referredBy d:Pasal_50_ayat_1 .
+
+d:Pasal_31 a pdp:Pasal ;
+    rdfs:label "Pasal 31"@id ;
+    dcterms:identifier "Pasal 31" ;
+    pdp:imposesObligation d:Norm_31_0 ;
+    pdp:pasalNumber 31 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib merekam seluruh kegiatan pemrosesan data."@id ;
+    pdp:verified false .
+
+d:Pasal_32 a pdp:Pasal ;
+    rdfs:label "Pasal 32"@id ;
+    dcterms:identifier "Pasal 32" ;
+    pdp:hasPart d:Pasal_32_ayat_1,
+        d:Pasal_32_ayat_2 ;
+    pdp:referredBy d:Pasal_50_ayat_1 .
+
+d:Pasal_35 a pdp:Pasal ;
+    rdfs:label "Pasal 35"@id ;
+    dcterms:identifier "Pasal 35" ;
+    pdp:imposesObligation d:Norm_35_0 ;
+    pdp:pasalNumber 35 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib melindungi dan memastikan keamanan data dengan langkah teknis operasional dan penetapan tingkat keamanan sesuai sifat dan risiko data."@id ;
+    pdp:verified false .
+
+d:Pasal_37 a pdp:Pasal ;
+    rdfs:label "Pasal 37"@id ;
+    dcterms:identifier "Pasal 37" ;
+    pdp:imposesObligation d:Norm_37_0 ;
+    pdp:pasalNumber 37 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib melakukan pengawasan terhadap setiap pihak yang terlibat dalam pemrosesan di bawah kendalinya."@id ;
+    pdp:verified false .
+
+d:Pasal_38 a pdp:Pasal ;
+    rdfs:label "Pasal 38"@id ;
+    dcterms:identifier "Pasal 38" ;
+    pdp:imposesObligation d:Norm_38_0 ;
+    pdp:pasalNumber 38 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib melindungi data dari pemrosesan yang tidak sah."@id ;
+    pdp:verified false .
+
+d:Pasal_39_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 39 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_39_1 ;
+    pdp:pasalNumber 39 ;
+    pdp:referredBy d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib mencegah data diakses secara tidak sah."@id ;
+    pdp:verified false .
+
+d:Pasal_41_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 41 ayat (2)"@id ;
+    pdp:hasPart d:Pasal_41_ayat_2_huruf_a,
+        d:Pasal_41_ayat_2_huruf_b,
+        d:Pasal_41_ayat_2_huruf_c ;
+    pdp:isExceptionFor d:Norm_41_1 ;
+    pdp:pasalNumber 41 ;
+    pdp:ringkasan "Pengecualian: tidak diizinkan undang-undang, dapat membahayakan pihak lain, atau Subjek Data memiliki perjanjian tertulis yang tidak mengizinkan."@id ;
+    pdp:verified false .
+
+d:Pasal_42_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 42 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_42_ayat_1_huruf_a,
+        d:Pasal_42_ayat_1_huruf_b,
+        d:Pasal_42_ayat_1_huruf_c ;
+    pdp:imposesObligation d:Norm_42_1 ;
+    pdp:pasalNumber 42 ;
+    pdp:referredBy d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib mengakhiri pemrosesan jika masa retensi berakhir, tujuan tercapai, atau ada permintaan Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_43_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 43 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_43_ayat_1_huruf_a,
+        d:Pasal_43_ayat_1_huruf_b,
+        d:Pasal_43_ayat_1_huruf_c,
+        d:Pasal_43_ayat_1_huruf_d ;
+    pdp:imposesObligation d:Norm_43_1 ;
+    pdp:pasalNumber 43 ;
+    pdp:referredBy d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib menghapus data jika tidak lagi diperlukan, persetujuan ditarik, ada permintaan Subjek Data, atau data diperoleh dan diproses secara melawan hukum."@id ;
+    pdp:verified false .
+
+d:Pasal_44_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 44 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_44_ayat_1_huruf_a,
+        d:Pasal_44_ayat_1_huruf_b,
+        d:Pasal_44_ayat_1_huruf_c,
+        d:Pasal_44_ayat_1_huruf_d ;
+    pdp:imposesObligation d:Norm_44_1 ;
+    pdp:pasalNumber 44 ;
+    pdp:referredBy d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memusnahkan data jika masa retensi berakhir dan jadwal retensi arsip menentukan musnah, ada permintaan Subjek Data, tidak berkaitan perkara hukum, atau diperoleh secara melawan hukum."@id ;
+    pdp:verified false .
+
+d:Pasal_45 a pdp:Pasal ;
+    rdfs:label "Pasal 45"@id ;
+    dcterms:identifier "Pasal 45" ;
+    pdp:imposesObligation d:Norm_45_0 ;
+    pdp:pasalNumber 45 ;
+    pdp:referredBy d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memberitahukan Subjek Data atas penghapusan dan/atau pemusnahan data."@id ;
+    pdp:verified false .
+
+d:Pasal_46_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 46 ayat (1)"@id ;
+    pdp:imposesObligation d:Norm_46_1 ;
+    pdp:pasalNumber 46 ;
+    pdp:referredBy d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Dalam hal terjadi kegagalan pelindungan data pribadi, Pengendali wajib menyampaikan pemberitahuan tertulis paling lambat 3x24 jam kepada Subjek Data dan lembaga."@id ;
+    pdp:verified false .
+
+d:Pasal_57_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 57 ayat (1)"@id ;
+    pdp:pasalNumber 57 ;
+    pdp:refersTo d:Pasal_20_ayat_1 ;
+    pdp:ringkasan "Pelanggaran atas pasal-pasal tertentu dapat dikenai sanksi administratif."@id ;
+    pdp:verified false .
+
+d:Pasal_58 a pdp:Pasal ;
+    rdfs:label "Pasal 58"@id ;
+    dcterms:identifier "Pasal 58" ;
+    pdp:pasalNumber 58 ;
+    pdp:ringkasan "Pemerintah mewujudkan pelindungan data pribadi melalui lembaga yang ditetapkan Presiden dan bertanggung jawab kepada Presiden."@id ;
+    pdp:verified false .
+
+d:Pasal_65_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 65 ayat (1)"@id ;
+    pdp:imposesProhibition d:Norm_65_1 ;
+    pdp:pasalNumber 65 ;
+    pdp:referredBy d:Pasal_67_ayat_1 ;
+    pdp:ringkasan "Dilarang secara melawan hukum memperoleh atau mengumpulkan data milik orang lain untuk menguntungkan diri sendiri atau orang lain yang dapat mengakibatkan kerugian Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_65_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 65 ayat (2)"@id ;
+    pdp:imposesProhibition d:Norm_65_2 ;
+    pdp:pasalNumber 65 ;
+    pdp:referredBy d:Pasal_67_ayat_2 ;
+    pdp:ringkasan "Dilarang secara melawan hukum mengungkapkan data milik orang lain."@id ;
+    pdp:verified false .
+
+d:Pasal_65_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 65 ayat (3)"@id ;
+    pdp:imposesProhibition d:Norm_65_3 ;
+    pdp:pasalNumber 65 ;
+    pdp:referredBy d:Pasal_67_ayat_3 ;
+    pdp:ringkasan "Dilarang secara melawan hukum menggunakan data milik orang lain."@id ;
+    pdp:verified false .
+
+d:Pasal_66 a pdp:Pasal ;
+    rdfs:label "Pasal 66"@id ;
+    dcterms:identifier "Pasal 66" ;
+    pdp:imposesProhibition d:Norm_66_0 ;
+    pdp:pasalNumber 66 ;
+    pdp:referredBy d:Pasal_68 ;
+    pdp:ringkasan "Dilarang membuat data palsu atau memalsukan data untuk menguntungkan diri sendiri atau orang lain yang dapat merugikan orang lain."@id ;
+    pdp:verified false .
+
+d:Pasal_71 a pdp:Pasal ;
+    rdfs:label "Pasal 71"@id ;
+    dcterms:identifier "Pasal 71" ;
+    pdp:pasalNumber 71 ;
+    pdp:referredBy d:Pasal_73 ;
+    pdp:ringkasan "Terpidana diberi waktu 1 bulan sejak putusan berkekuatan hukum tetap untuk membayar denda; harta dapat disita dan dilelang, dan jika tidak cukup diganti pidana penjara."@id ;
+    pdp:verified false .
+
+d:Pasal_72 a pdp:Pasal ;
+    rdfs:label "Pasal 72"@id ;
+    dcterms:identifier "Pasal 72" ;
+    pdp:pasalNumber 72 ;
+    pdp:referredBy d:Pasal_73 ;
+    pdp:ringkasan "Jika penyitaan harta korporasi tidak cukup melunasi denda, korporasi dikenai pembekuan sebagian atau seluruh usaha paling lama 5 tahun."@id ;
+    pdp:verified false .
+
+d:Pasal_8 a pdp:Pasal ;
+    rdfs:label "Pasal 8"@id ;
+    dcterms:identifier "Pasal 8" ;
+    pdp:grantsRight d:Norm_8_0 ;
+    pdp:pasalNumber 8 ;
+    pdp:referredBy d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak mengakhiri pemrosesan, menghapus, dan/atau memusnahkan data tentang dirinya."@id ;
+    pdp:verified false .
+
+d:Pasal_9 a pdp:Pasal ;
+    rdfs:label "Pasal 9"@id ;
+    dcterms:identifier "Pasal 9" ;
+    pdp:grantsRight d:Norm_9_0 ;
+    pdp:pasalNumber 9 ;
+    pdp:referredBy d:Pasal_15_ayat_1 ;
+    pdp:ringkasan "Hak menarik kembali persetujuan pemrosesan data yang telah diberikan."@id ;
+    pdp:verified false .
+
+pdp:Deadline a owl:Class .
+
+d:Korporasi a pdp:Actor ;
+    rdfs:label "Korporasi"@id .
+
+d:Norm_30_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 30 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasDeadline d:Deadline_3x24_jam ;
+    pdp:hasException d:Pasal_33,
+        d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memperbarui dan/atau memperbaiki kesalahan data paling lambat 3x24 jam sejak menerima permintaan."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Norm_32_1 a pdp:Kewajiban ;
+    rdfs:label "Kewajiban pada Pasal 32 ayat (1)"@id ;
+    pdp:appliesTo d:PengendaliDataPribadi ;
+    pdp:hasException d:Pasal_33,
+        d:Pasal_50_ayat_1 ;
+    pdp:ringkasan "Pengendali wajib memberikan akses kepada Subjek Data atas data yang diproses beserta rekam jejak pemrosesannya."@id ;
+    pdp:sanctionedBy d:Norm_57_2,
+        d:Norm_57_3 .
+
+d:Pasal_22_ayat_5 a pdp:Ayat ;
+    rdfs:label "Pasal 22 ayat (5)"@id ;
+    pdp:pasalNumber 22 ;
+    pdp:refersTo d:Pasal_22_ayat_1,
+        d:Pasal_22_ayat_4 ;
+    pdp:ringkasan "Persetujuan yang tidak memenuhi ayat (1) atau ayat (4) dinyatakan batal demi hukum."@id ;
+    pdp:verified false .
+
+d:Pasal_33 a pdp:Pasal ;
+    rdfs:label "Pasal 33"@id ;
+    dcterms:identifier "Pasal 33" ;
+    pdp:hasPart d:Pasal_33_huruf_a,
+        d:Pasal_33_huruf_b,
+        d:Pasal_33_huruf_c ;
+    pdp:imposesObligation d:Norm_33_0 ;
+    pdp:isExceptionFor d:Norm_30_1,
+        d:Norm_32_1 ;
+    pdp:pasalNumber 33 ;
+    pdp:ringkasan "Pengendali wajib menolak permintaan akses atau perubahan jika membahayakan keamanan atau kesehatan fisik dan mental, mengungkap data orang lain, atau bertentangan dengan pertahanan dan keamanan nasional."@id ;
+    pdp:verified false .
+
+d:Pasal_36 a pdp:Pasal ;
+    rdfs:label "Pasal 36"@id ;
+    dcterms:identifier "Pasal 36" ;
+    pdp:imposesObligation d:Norm_36_0 ;
+    pdp:pasalNumber 36 ;
+    pdp:referredBy d:Pasal_50_ayat_1,
+        d:Pasal_52 ;
+    pdp:ringkasan "Pengendali wajib menjaga kerahasiaan data."@id ;
+    pdp:verified false .
+
+d:Pasal_56_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 56 ayat (2)"@id ;
+    pdp:imposesObligation d:Norm_56_2 ;
+    pdp:pasalNumber 56 ;
+    pdp:referredBy d:Pasal_56_ayat_3,
+        d:Pasal_56_ayat_4 ;
+    pdp:ringkasan "Pengendali wajib memastikan negara tujuan transfer memiliki tingkat pelindungan setara atau lebih tinggi."@id ;
+    pdp:verified false .
+
+d:Pasal_56_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 56 ayat (3)"@id ;
+    pdp:imposesObligation d:Norm_56_3 ;
+    pdp:pasalNumber 56 ;
+    pdp:referredBy d:Pasal_56_ayat_4 ;
+    pdp:refersTo d:Pasal_56_ayat_2 ;
+    pdp:ringkasan "Jika ayat (2) tidak terpenuhi, Pengendali wajib memastikan pelindungan yang memadai dan bersifat mengikat."@id ;
+    pdp:verified false .
+
+d:Pasal_56_ayat_4 a pdp:Ayat ;
+    rdfs:label "Pasal 56 ayat (4)"@id ;
+    pdp:imposesObligation d:Norm_56_4 ;
+    pdp:pasalNumber 56 ;
+    pdp:refersTo d:Pasal_56_ayat_2,
+        d:Pasal_56_ayat_3 ;
+    pdp:ringkasan "Jika ayat (2) dan (3) tidak terpenuhi, Pengendali wajib memperoleh persetujuan Subjek Data."@id ;
+    pdp:verified false .
+
+d:Pasal_73 a pdp:Pasal ;
+    rdfs:label "Pasal 73"@id ;
+    dcterms:identifier "Pasal 73" ;
+    pdp:pasalNumber 73 ;
+    pdp:refersTo d:Pasal_71,
+        d:Pasal_72 ;
+    pdp:ringkasan "Ketentuan Pasal 71 dan 72 berlaku juga untuk pidana tambahan berupa pembayaran ganti kerugian."@id ;
+    pdp:verified false .
+
+pdp:DataCategory a owl:Class .
+
+pdp:Provision a owl:Class .
+
+pdp:establishesNorm a owl:ObjectProperty .
+
+d:DataAnak a pdp:DataCategory ;
+    rdfs:label "Data anak"@id ;
+    rdfs:subClassOf d:DataPribadiSpesifik .
+
+d:Pasal_67_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 67 ayat (1)"@id ;
+    pdp:establishesNorm d:Norm_67_1 ;
+    pdp:pasalNumber 67 ;
+    pdp:referredBy d:Pasal_69,
+        d:Pasal_70_ayat_1 ;
+    pdp:refersTo d:Pasal_65_ayat_1 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (1) dipidana penjara paling lama 5 tahun dan/atau denda paling banyak Rp5.000.000.000."@id ;
+    pdp:verified false .
+
+d:Pasal_67_ayat_2 a pdp:Ayat ;
+    rdfs:label "Pasal 67 ayat (2)"@id ;
+    pdp:establishesNorm d:Norm_67_2 ;
+    pdp:pasalNumber 67 ;
+    pdp:referredBy d:Pasal_69,
+        d:Pasal_70_ayat_1 ;
+    pdp:refersTo d:Pasal_65_ayat_2 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (2) dipidana penjara paling lama 4 tahun dan/atau denda paling banyak Rp4.000.000.000."@id ;
+    pdp:verified false .
+
+d:Pasal_67_ayat_3 a pdp:Ayat ;
+    rdfs:label "Pasal 67 ayat (3)"@id ;
+    pdp:establishesNorm d:Norm_67_3 ;
+    pdp:pasalNumber 67 ;
+    pdp:referredBy d:Pasal_69,
+        d:Pasal_70_ayat_1 ;
+    pdp:refersTo d:Pasal_65_ayat_3 ;
+    pdp:ringkasan "Pelanggaran Pasal 65 ayat (3) dipidana penjara paling lama 5 tahun dan/atau denda paling banyak Rp5.000.000.000."@id ;
+    pdp:verified false .
+
+d:Pasal_68 a pdp:Pasal ;
+    rdfs:label "Pasal 68"@id ;
+    dcterms:identifier "Pasal 68" ;
+    pdp:establishesNorm d:Norm_68_0 ;
+    pdp:pasalNumber 68 ;
+    pdp:referredBy d:Pasal_69,
+        d:Pasal_70_ayat_1 ;
+    pdp:refersTo d:Pasal_66 ;
+    pdp:ringkasan "Pelanggaran Pasal 66 dipidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp6.000.000.000."@id ;
+    pdp:verified false .
+
+pdp:Larangan a owl:Class ;
+    rdfs:subClassOf pdp:Norm .
+
+pdp:Norm a owl:Class .
+
+d:Deadline_3x24_jam a pdp:Deadline ;
+    rdfs:label "3x24 jam"@id ;
+    pdp:durationHours 72 .
+
+d:Norm_69_0 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 69"@id ;
+    pdp:appliesTo d:SetiapOrang ;
+    pdp:ringkasan "Selain pidana Pasal 67 dan 68, dapat dijatuhi pidana tambahan berupa perampasan keuntungan atau harta hasil tindak pidana dan/atau pembayaran ganti kerugian."@id ;
+    pdp:sanksiTipe "PidanaTambahan" .
+
+d:Pasal_69 a pdp:Pasal ;
+    rdfs:label "Pasal 69"@id ;
+    dcterms:identifier "Pasal 69" ;
+    pdp:establishesNorm d:Norm_69_0 ;
+    pdp:pasalNumber 69 ;
+    pdp:refersTo d:Pasal_67_ayat_1,
+        d:Pasal_67_ayat_2,
+        d:Pasal_67_ayat_3,
+        d:Pasal_68 ;
+    pdp:ringkasan "Selain pidana Pasal 67 dan 68, dapat dijatuhi pidana tambahan berupa perampasan keuntungan atau harta hasil tindak pidana dan/atau pembayaran ganti kerugian."@id ;
+    pdp:verified false .
+
+d:Pasal_70_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 70 ayat (1)"@id ;
+    pdp:pasalNumber 70 ;
+    pdp:refersTo d:Pasal_67_ayat_1,
+        d:Pasal_67_ayat_2,
+        d:Pasal_67_ayat_3,
+        d:Pasal_68 ;
+    pdp:ringkasan "Jika tindak pidana Pasal 67 dan 68 dilakukan korporasi, pidana dapat dijatuhkan kepada pengurus, pemegang kendali, pemberi perintah, pemilik manfaat, dan/atau korporasi."@id ;
+    pdp:verified false .
+
+d:Pasal_1 a pdp:Pasal ;
+    rdfs:label "Pasal 1"@id ;
+    dcterms:identifier "Pasal 1" ;
+    pdp:pasalNumber 1 ;
+    pdp:ringkasan "Definisi istilah: Data Pribadi, Pelindungan Data Pribadi, Pengendali, Prosesor, Subjek Data, Setiap Orang, Badan Publik, Organisasi Internasional."@id ;
+    pdp:verified false .
+
+d:ProsesorDataPribadi a pdp:Actor ;
+    rdfs:label "Prosesor Data Pribadi"@id .
+
+pdp:Concept a owl:Class .
+
+d:DataPribadiUmum a pdp:DataCategory ;
+    rdfs:label "Data Pribadi bersifat umum"@id .
+
+d:Pasal_52 a pdp:Pasal ;
+    rdfs:label "Pasal 52"@id ;
+    dcterms:identifier "Pasal 52" ;
+    pdp:imposesObligation d:Norm_52_0 ;
+    pdp:pasalNumber 52 ;
+    pdp:refersTo d:Pasal_29,
+        d:Pasal_31,
+        d:Pasal_35,
+        d:Pasal_36,
+        d:Pasal_37,
+        d:Pasal_38,
+        d:Pasal_39_ayat_1 ;
+    pdp:ringkasan "Kewajiban Pengendali pada Pasal 29, 31, 35, 36, 37, 38, dan 39 berlaku juga bagi Prosesor."@id ;
+    pdp:verified false .
+
+pdp:Actor a owl:Class .
+
+d:SetiapOrang a pdp:Actor ;
+    rdfs:label "Setiap Orang"@id .
+
+d:SubjekDataPribadi a pdp:Actor ;
+    rdfs:label "Subjek Data Pribadi"@id .
+
+pdp:Hak a owl:Class ;
+    rdfs:subClassOf pdp:Norm .
+
+pdp:Sanksi a owl:Class ;
+    rdfs:subClassOf pdp:Norm .
+
+d:DataPribadiSpesifik a pdp:DataCategory ;
+    rdfs:label "Data Pribadi bersifat spesifik"@id .
+
+d:Pasal_15_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 15 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_15_ayat_1_huruf_a,
+        d:Pasal_15_ayat_1_huruf_b,
+        d:Pasal_15_ayat_1_huruf_c,
+        d:Pasal_15_ayat_1_huruf_d,
+        d:Pasal_15_ayat_1_huruf_e ;
+    pdp:isExceptionFor d:Norm_10_1,
+        d:Norm_11_0,
+        d:Norm_13_1,
+        d:Norm_8_0,
+        d:Norm_9_0 ;
+    pdp:pasalNumber 15 ;
+    pdp:refersTo d:Pasal_10_ayat_1,
+        d:Pasal_11,
+        d:Pasal_13_ayat_1,
+        d:Pasal_8,
+        d:Pasal_9 ;
+    pdp:ringkasan "Hak pada Pasal 8, 9, 10 ayat (1), 11, dan 13 dikecualikan untuk kepentingan pertahanan dan keamanan nasional, penegakan hukum, kepentingan umum penyelenggaraan negara, pengawasan sektor jasa keuangan, atau statistik dan penelitian ilmiah."@id ;
+    pdp:verified false .
+
+pdp:Bab a owl:Class .
+
+d:Pasal_50_ayat_1 a pdp:Ayat ;
+    rdfs:label "Pasal 50 ayat (1)"@id ;
+    pdp:hasPart d:Pasal_50_ayat_1_huruf_a,
+        d:Pasal_50_ayat_1_huruf_b,
+        d:Pasal_50_ayat_1_huruf_c,
+        d:Pasal_50_ayat_1_huruf_d ;
+    pdp:isExceptionFor d:Norm_30_1,
+        d:Norm_32_1,
+        d:Norm_36_0,
+        d:Norm_42_1,
+        d:Norm_43_1,
+        d:Norm_44_1,
+        d:Norm_45_0,
+        d:Norm_46_1 ;
+    pdp:pasalNumber 50 ;
+    pdp:refersTo d:Pasal_30,
+        d:Pasal_32,
+        d:Pasal_36,
+        d:Pasal_42_ayat_1,
+        d:Pasal_43_ayat_1,
+        d:Pasal_44_ayat_1,
+        d:Pasal_45,
+        d:Pasal_46_ayat_1 ;
+    pdp:ringkasan "Pasal 30, 32, 36, 42, 43 ayat (1) huruf a-c, 44 ayat (1) huruf b, 45, dan 46 ayat (1) huruf a dikecualikan untuk pertahanan dan keamanan nasional, penegakan hukum, kepentingan umum penyelenggaraan negara, atau pengawasan sektor keuangan."@id ;
+    pdp:verified false .
+
+d:Norm_57_2 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 57 ayat (2)"@id ;
+    pdp:appliesTo d:LembagaPengawas ;
+    pdp:ringkasan "Sanksi administratif berupa peringatan tertulis, penghentian sementara kegiatan pemrosesan, penghapusan atau pemusnahan data, dan/atau denda administratif."@id ;
+    pdp:sanksiTipe "Administratif" .
+
+d:Norm_57_3 a pdp:Sanksi ;
+    rdfs:label "Sanksi pada Pasal 57 ayat (3)"@id ;
+    pdp:appliesTo d:LembagaPengawas ;
+    pdp:maxFinePercentRevenue 2 ;
+    pdp:ringkasan "Denda administratif paling tinggi 2 persen dari pendapatan atau penerimaan tahunan terhadap variabel pelanggaran."@id ;
+    pdp:sanksiTipe "Administratif" .
+
+d:PengendaliDataPribadi a pdp:Actor ;
+    rdfs:label "Pengendali Data Pribadi"@id .
+
+pdp:Kewajiban a owl:Class ;
+    rdfs:subClassOf pdp:Norm .
+
+pdp:Ayat a owl:Class ;
+    rdfs:subClassOf pdp:Provision .
+
+pdp:Pasal a owl:Class ;
+    rdfs:subClassOf pdp:Provision .
+
+pdp:Huruf a owl:Class ;
+    rdfs:subClassOf pdp:Provision .
+
