@@ -1,3 +1,4 @@
+import logging
 from functools import lru_cache
 from typing import Protocol
 
@@ -7,9 +8,11 @@ from app.services.answer_builder import build_answer
 from app.services.context import build_context
 from app.services.graph_store import GraphStore
 from app.services.llm_answerer import LLMAnswerer
-from app.services.llm_client import LLMClient
+from app.services.llm_client import LLMClient, LLMError, llm_deadline
 from app.services.retriever import Retriever
 from app.services.sparql_planner import SparqlPlanner
+
+logger = logging.getLogger(__name__)
 
 REFUSAL_MESSAGE = (
     "Pertanyaan ini tidak terhubung ke pasal mana pun di UU PDP, "
@@ -57,12 +60,27 @@ class AskEngine:
 
 
 class HybridEngine:
-    def __init__(self, extractive: AskEngine, planner: SparqlPlanner, answerer: LLMAnswerer) -> None:
+    def __init__(
+        self,
+        extractive: AskEngine,
+        planner: SparqlPlanner,
+        answerer: LLMAnswerer,
+        budget_seconds: float,
+    ) -> None:
         self.extractive = extractive
         self.planner = planner
         self.answerer = answerer
+        self.budget_seconds = budget_seconds
 
     def answer(self, question: str) -> AskResponse:
+        try:
+            with llm_deadline(self.budget_seconds):
+                return self._answer_with_llm(question)
+        except LLMError as error:
+            logger.warning("LLM gagal (%s): %s; memakai mesin ekstraktif", error.kind, error.message)
+            return self.extractive.answer(question)
+
+    def _answer_with_llm(self, question: str) -> AskResponse:
         base = self.extractive
         store = base.store
         if base.retriever.is_out_of_scope(question):
@@ -85,21 +103,21 @@ class HybridEngine:
 
         context, allowed = build_context(store, seeds, settings.LLM_MAX_CONTEXT_PROVISIONS)
         data = self.answerer.ask(question, context)
-        if str(data.get("status", "")).lower() != "answered":
+        if data["status"] != "answered":
             return base.refuse(question)
 
         valid = [
             i
-            for i in [data.get("primary_id"), *(data.get("cited_ids") or []), *seeds]
-            if isinstance(i, str) and i in allowed and store.provisions[i].kind != "huruf"
+            for i in [data["primary_id"], *data["cited_ids"], *seeds]
+            if i is not None and i in allowed and store.provisions[i].kind != "huruf"
         ]
         if not valid:
             return base.refuse(question)
         primary = store.provisions[valid[0]]
         cited_others = [
             store.provisions[i]
-            for i in (data.get("cited_ids") or [])
-            if isinstance(i, str) and i in allowed and i != primary.id and store.provisions[i].kind != "huruf"
+            for i in dict.fromkeys(data["cited_ids"])
+            if i in allowed and i != primary.id and store.provisions[i].kind != "huruf"
         ]
         others = cited_others or store.siblings(primary)
         draft = build_answer(store, question, primary, others)
@@ -116,7 +134,12 @@ def get_engine() -> Engine:
     if not settings.llm_enabled:
         return extractive
     client = LLMClient(settings)
-    return HybridEngine(extractive, SparqlPlanner(store, client), LLMAnswerer(store, client))
+    return HybridEngine(
+        extractive,
+        SparqlPlanner(store, client),
+        LLMAnswerer(store, client),
+        settings.LLM_TOTAL_BUDGET_SECONDS,
+    )
 
 
 def answer_question(question: str) -> AskResponse:

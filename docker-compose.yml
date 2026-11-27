@@ -5,6 +5,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+    # Format env_file panjang butuh Docker Compose >= 2.24.
+    env_file:
+      - path: .env
+        required: false
     restart: unless-stopped
     healthcheck:
       test:
